@@ -1,0 +1,53 @@
+I, [2016-11-19T13:59:11.182448 #6212]  INFO -- default-centos-72: -----> Converging <default-centos-72>...
+I, [2016-11-19T13:59:11.187448 #6212]  INFO -- default-centos-72: Preparing files for transfer
+I, [2016-11-19T13:59:11.187949 #6212]  INFO -- default-centos-72: Preparing dna.json
+I, [2016-11-19T13:59:11.190449 #6212]  INFO -- default-centos-72: Preparing current project directory as a cookbook
+I, [2016-11-19T13:59:11.232454 #6212]  INFO -- default-centos-72: Removing non-cookbook files before transfer
+I, [2016-11-19T13:59:11.322966 #6212]  INFO -- default-centos-72: Preparing solo.rb
+I, [2016-11-19T13:59:13.288715 #6212]  INFO -- default-centos-72: -----> Chef Omnibus installation detected (install only if missing)
+I, [2016-11-19T13:59:13.333721 #6212]  INFO -- default-centos-72: Transferring files to <default-centos-72>
+I, [2016-11-19T13:59:15.352477 #6212]  INFO -- default-centos-72: Starting Chef Client, version 12.16.42
+I, [2016-11-19T13:59:26.971953 #6212]  INFO -- default-centos-72: resolving cookbooks for run list: ["jnj_rsyslog::default"]
+I, [2016-11-19T13:59:26.982454 #6212]  INFO -- default-centos-72: Synchronizing Cookbooks:
+I, [2016-11-19T13:59:26.982954 #6212]  INFO -- default-centos-72:   - jnj_rsyslog (0.1.0)
+I, [2016-11-19T13:59:26.993456 #6212]  INFO -- default-centos-72: Installing Cookbook Gems:
+I, [2016-11-19T13:59:26.993456 #6212]  INFO -- default-centos-72: Compiling Cookbooks...
+I, [2016-11-19T13:59:26.993956 #6212]  INFO -- default-centos-72: Converging 2 resources
+I, [2016-11-19T13:59:26.993956 #6212]  INFO -- default-centos-72: Recipe: jnj_rsyslog::default
+I, [2016-11-19T13:59:27.023959 #6212]  INFO -- default-centos-72:   * template[/etc/rsyslog.d/al_log_agt.conf] action create
+I, [2016-11-19T13:59:27.024459 #6212]  INFO -- default-centos-72:     - create new file /etc/rsyslog.d/al_log_agt.conf
+I, [2016-11-19T13:59:27.024459 #6212]  INFO -- default-centos-72:     - update content in file /etc/rsyslog.d/al_log_agt.conf from none to a50658
+I, [2016-11-19T13:59:27.024459 #6212]  INFO -- default-centos-72:     --- /etc/rsyslog.d/al_log_agt.conf	2016-11-19 08:29:25.845794866 +0000
+I, [2016-11-19T13:59:27.024459 #6212]  INFO -- default-centos-72:     +++ /etc/rsyslog.d/.chef-al_log_agt20161119-12272-1oix0ug.conf	2016-11-19 08:29:25.844794366 +0000
+I, [2016-11-19T13:59:27.024459 #6212]  INFO -- default-centos-72:     @@ -1 +1,21 @@
+I, [2016-11-19T13:59:27.024459 #6212]  INFO -- default-centos-72:     +# ### begin forwarding rule ###
+I, [2016-11-19T13:59:27.024459 #6212]  INFO -- default-centos-72:     +# The statement between the begin ... end define a SINGLE forwarding
+I, [2016-11-19T13:59:27.024960 #6212]  INFO -- default-centos-72:     +# rule. They belong together, do NOT split them. If you create multiple
+I, [2016-11-19T13:59:27.024960 #6212]  INFO -- default-centos-72:     +# forwarding rules, duplicate the whole block!
+I, [2016-11-19T13:59:27.024960 #6212]  INFO -- default-centos-72:     +# Remote Logging (we use TCP for reliable delivery)
+I, [2016-11-19T13:59:27.024960 #6212]  INFO -- default-centos-72:     +#
+I, [2016-11-19T13:59:27.024960 #6212]  INFO -- default-centos-72:     +# An on-disk queue is created for this action. If the remote host is
+I, [2016-11-19T13:59:27.024960 #6212]  INFO -- default-centos-72:     +# down, messages are spooled to disk and sent when it is up again.
+I, [2016-11-19T13:59:27.025460 #6212]  INFO -- default-centos-72:     +$WorkDirectory /var/lib/rsyslog # where to place spool files
+I, [2016-11-19T13:59:27.025460 #6212]  INFO -- default-centos-72:     +$ActionQueueFileName fwdRule1 # unique name prefix for spool files
+I, [2016-11-19T13:59:27.025460 #6212]  INFO -- default-centos-72:     +$ActionQueueMaxDiskSpace 1g   # 1gb space limit (use as much as possible)
+I, [2016-11-19T13:59:27.025460 #6212]  INFO -- default-centos-72:     +$ActionQueueSaveOnShutdown on # save messages to disk on shutdown
+I, [2016-11-19T13:59:27.025960 #6212]  INFO -- default-centos-72:     +$ActionQueueType LinkedList   # run asynchronously
+I, [2016-11-19T13:59:27.025960 #6212]  INFO -- default-centos-72:     +$ActionResumeRetryCount -1    # infinite retries if host is down
+I, [2016-11-19T13:59:27.025960 #6212]  INFO -- default-centos-72:     +# remote host is: name/ip:port, e.g. 192.168.0.1:514, port optional
+I, [2016-11-19T13:59:27.026460 #6212]  INFO -- default-centos-72:     +#It's working fine 
+I, [2016-11-19T13:59:27.026460 #6212]  INFO -- default-centos-72:     +
+I, [2016-11-19T13:59:27.026460 #6212]  INFO -- default-centos-72:     +*.* @@127.0.0.1:1514
+I, [2016-11-19T13:59:27.026960 #6212]  INFO -- default-centos-72:     +
+I, [2016-11-19T13:59:27.026960 #6212]  INFO -- default-centos-72:     +# ### end of the forwarding rule ###
+I, [2016-11-19T13:59:27.131473 #6212]  INFO -- default-centos-72:     - change mode from '' to '0644'
+I, [2016-11-19T13:59:27.131973 #6212]  INFO -- default-centos-72:     - restore selinux security context
+I, [2016-11-19T13:59:27.503020 #6212]  INFO -- default-centos-72:   * service[rsyslog] action restart
+I, [2016-11-19T13:59:27.506521 #6212]  INFO -- default-centos-72:     - restart service service[rsyslog]
+I, [2016-11-19T13:59:27.579530 #6212]  INFO -- default-centos-72:   * service[rsyslog] action enable (up to date)
+I, [2016-11-19T13:59:27.661040 #6212]  INFO -- default-centos-72:   * service[rsyslog] action start (up to date)
+I, [2016-11-19T13:59:27.752552 #6212]  INFO -- default-centos-72: 
+I, [2016-11-19T13:59:27.753052 #6212]  INFO -- default-centos-72: Running handlers:
+I, [2016-11-19T13:59:27.753052 #6212]  INFO -- default-centos-72: Running handlers complete
+I, [2016-11-19T13:59:27.753052 #6212]  INFO -- default-centos-72: Chef Client finished, 2/4 resources updated in 12 seconds
+I, [2016-11-19T13:59:27.829562 #6212]  INFO -- default-centos-72: Finished converging <default-centos-72> (0m16.64s).
