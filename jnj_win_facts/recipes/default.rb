@@ -36,17 +36,6 @@
   end
 end
 
-
-#%w[ C:\\ProgramData\\PuppetLabs\\facter\\facts.d ].each do |path|
-#  directory path do
-#  owner  'Administrators'
-#  group  'Administrators'
-#  action :create
-#   end
-#end
-
-
-
 cookbook_file 'C:\\ProgramData\\PuppetLabs\\facter\\facts.d\\scm_facts.ps1' do
         source 'scm_facts.ps1'
         owner  'Administrators'
