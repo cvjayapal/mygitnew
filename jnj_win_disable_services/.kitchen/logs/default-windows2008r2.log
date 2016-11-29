@@ -1,0 +1,66 @@
+I, [2016-11-29T15:31:40.420010 #8084]  INFO -- default-windows2008r2: -----> Creating <default-windows2008r2>...
+I, [2016-11-29T15:31:42.943445 #8084]  INFO -- default-windows2008r2: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2016-11-29T15:31:43.126479 #8084]  INFO -- default-windows2008r2: ==> default: Importing base box 'win2008r2'...
+I, [2016-11-29T15:33:56.666277 #8084]  INFO -- default-windows2008r2: [KProgress: 10%[KProgress: 20%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+I, [2016-11-29T15:33:58.519517 #8084]  INFO -- default-windows2008r2: ==> default: Setting the name of the VM: kitchen-jnj_win_disable_services-default-windows2008r2_default_1480413838434_62813
+I, [2016-11-29T15:34:03.739712 #8084]  INFO -- default-windows2008r2: ==> default: Fixed port collision for 22 => 2222. Now on port 2200.
+I, [2016-11-29T15:34:03.859610 #8084]  INFO -- default-windows2008r2: ==> default: Clearing any previously set network interfaces...
+I, [2016-11-29T15:34:04.662257 #8084]  INFO -- default-windows2008r2: ==> default: Preparing network interfaces based on configuration...
+I, [2016-11-29T15:34:04.662257 #8084]  INFO -- default-windows2008r2:     default: Adapter 1: nat
+I, [2016-11-29T15:34:04.662257 #8084]  INFO -- default-windows2008r2:     default: Adapter 2: hostonly
+I, [2016-11-29T15:34:04.827722 #8084]  INFO -- default-windows2008r2: ==> default: Forwarding ports...
+I, [2016-11-29T15:34:04.989633 #8084]  INFO -- default-windows2008r2:     default: 5985 (guest) => 5985 (host) (adapter 1)
+I, [2016-11-29T15:34:04.989633 #8084]  INFO -- default-windows2008r2:     default: 3390 (guest) => 33390 (host) (adapter 1)
+I, [2016-11-29T15:34:04.990616 #8084]  INFO -- default-windows2008r2:     default: 5986 (guest) => 55986 (host) (adapter 1)
+I, [2016-11-29T15:34:04.990616 #8084]  INFO -- default-windows2008r2:     default: 22 (guest) => 2200 (host) (adapter 1)
+I, [2016-11-29T15:34:05.316545 #8084]  INFO -- default-windows2008r2: ==> default: Booting VM...
+I, [2016-11-29T15:34:13.069569 #8084]  INFO -- default-windows2008r2: ==> default: Waiting for machine to boot. This may take a few minutes...
+I, [2016-11-29T15:34:13.542752 #8084]  INFO -- default-windows2008r2:     default: WinRM address: 127.0.0.1:5985
+I, [2016-11-29T15:34:13.542752 #8084]  INFO -- default-windows2008r2:     default: WinRM username: vagrant
+I, [2016-11-29T15:34:13.542752 #8084]  INFO -- default-windows2008r2:     default: WinRM execution_time_limit: PT2H
+I, [2016-11-29T15:34:13.542752 #8084]  INFO -- default-windows2008r2:     default: WinRM transport: negotiate
+I, [2016-11-29T15:37:06.300654 #8084]  INFO -- default-windows2008r2: ==> default: Machine booted and ready!
+I, [2016-11-29T15:37:06.300654 #8084]  INFO -- default-windows2008r2: ==> default: Checking for guest additions in VM...
+I, [2016-11-29T15:37:06.592548 #8084]  INFO -- default-windows2008r2:     default: No guest additions were detected on the base box for this VM! Guest
+I, [2016-11-29T15:37:06.592548 #8084]  INFO -- default-windows2008r2:     default: additions are required for forwarded ports, shared folders, host only
+I, [2016-11-29T15:37:06.592548 #8084]  INFO -- default-windows2008r2:     default: networking, and more. If SSH fails on this machine, please install
+I, [2016-11-29T15:37:06.592548 #8084]  INFO -- default-windows2008r2:     default: the guest additions and repackage the box to continue.
+I, [2016-11-29T15:37:06.593497 #8084]  INFO -- default-windows2008r2:     default: 
+I, [2016-11-29T15:37:06.593497 #8084]  INFO -- default-windows2008r2:     default: This is not an error message; everything may continue to work properly,
+I, [2016-11-29T15:37:06.593497 #8084]  INFO -- default-windows2008r2:     default: in which case you may ignore this message.
+I, [2016-11-29T15:37:06.745167 #8084]  INFO -- default-windows2008r2: ==> default: Configuring and enabling network interfaces...
+I, [2016-11-29T15:37:13.617705 #8084]  INFO -- default-windows2008r2: ==> default: Machine not provisioned because `--no-provision` is specified.
+I, [2016-11-29T15:37:35.986459 #8084]  INFO -- default-windows2008r2: [WinRM] Established
+I, [2016-11-29T15:37:35.990370 #8084]  INFO -- default-windows2008r2: 
+I, [2016-11-29T15:37:36.031620 #8084]  INFO -- default-windows2008r2: Vagrant instance <default-windows2008r2> created.
+I, [2016-11-29T15:37:36.033575 #8084]  INFO -- default-windows2008r2: Finished creating <default-windows2008r2> (5m55.60s).
+I, [2016-11-29T15:37:36.034535 #8084]  INFO -- default-windows2008r2: -----> Converging <default-windows2008r2>...
+I, [2016-11-29T15:37:36.036490 #8084]  INFO -- default-windows2008r2: Preparing files for transfer
+I, [2016-11-29T15:37:36.036490 #8084]  INFO -- default-windows2008r2: Preparing dna.json
+I, [2016-11-29T15:37:36.041378 #8084]  INFO -- default-windows2008r2: Preparing current project directory as a cookbook
+I, [2016-11-29T15:37:36.130954 #8084]  INFO -- default-windows2008r2: Removing non-cookbook files before transfer
+I, [2016-11-29T15:37:36.212119 #8084]  INFO -- default-windows2008r2: Preparing data_bags
+I, [2016-11-29T15:37:36.216007 #8084]  INFO -- default-windows2008r2: Preparing solo.rb
+I, [2016-11-29T15:37:36.873553 #8084]  INFO -- default-windows2008r2: -----> Installing Chef Omnibus (install only if missing)
+I, [2016-11-29T15:37:44.656870 #8084]  INFO -- default-windows2008r2: Downloading package from https://packages.chef.io/files/stable/chef/12.16.42/windows/2012r2/chef-client-12.16.42-1-x64.msi
+I, [2016-11-29T15:39:55.765185 #8084]  INFO -- default-windows2008r2: Download complete.
+I, [2016-11-29T15:39:56.397813 #8084]  INFO -- default-windows2008r2: Successfully verified C:\Users\vagrant\AppData\Local\Temp\chef-client-12.16.42-1-x64.msi
+I, [2016-11-29T15:39:56.418366 #8084]  INFO -- default-windows2008r2: Installing Chef Omnibus package C:\Users\vagrant\AppData\Local\Temp\chef-client-12.16.42-1-x64.msi
+I, [2016-11-29T15:41:54.955324 #8084]  INFO -- default-windows2008r2: Installation complete
+I, [2016-11-29T15:41:55.108809 #8084]  INFO -- default-windows2008r2: Transferring files to <default-windows2008r2>
+I, [2016-11-29T15:42:16.251234 #8084]  INFO -- default-windows2008r2: Starting Chef Client, version 12.16.42
+I, [2016-11-29T15:42:58.208245 #8084]  INFO -- default-windows2008r2: Creating a new client identity for default-windows2008r2 using the validator key.
+I, [2016-11-29T15:42:58.213128 #8084]  INFO -- default-windows2008r2: resolving cookbooks for run list: ["jnj_win_disable_services"]
+I, [2016-11-29T15:42:58.217999 #8084]  INFO -- default-windows2008r2: Synchronizing Cookbooks:
+I, [2016-11-29T15:42:58.221909 #8084]  INFO -- default-windows2008r2:   - jnj_win_disable_services (0.1.0)
+I, [2016-11-29T15:42:58.224842 #8084]  INFO -- default-windows2008r2: Installing Cookbook Gems:
+I, [2016-11-29T15:42:58.228753 #8084]  INFO -- default-windows2008r2: Compiling Cookbooks...
+I, [2016-11-29T15:42:58.232663 #8084]  INFO -- default-windows2008r2: Converging 1 resources
+I, [2016-11-29T15:42:58.235595 #8084]  INFO -- default-windows2008r2: Recipe: jnj_win_disable_services::default
+I, [2016-11-29T15:42:58.238528 #8084]  INFO -- default-windows2008r2:   * windows_service[SharedAccess] action configure_startup
+I, [2016-11-29T15:42:58.242439 #8084]  INFO -- default-windows2008r2:     - set service windows_service[SharedAccess] startup type to manual
+I, [2016-11-29T15:42:58.245372 #8084]  INFO -- default-windows2008r2: 
+I, [2016-11-29T15:42:58.249300 #8084]  INFO -- default-windows2008r2: Running handlers:
+I, [2016-11-29T15:42:58.252232 #8084]  INFO -- default-windows2008r2: Running handlers complete
+I, [2016-11-29T15:42:58.256144 #8084]  INFO -- default-windows2008r2: Chef Client finished, 1/1 resources updated in 44 seconds
+I, [2016-11-29T15:42:58.305027 #8084]  INFO -- default-windows2008r2: Finished converging <default-windows2008r2> (5m22.27s).
