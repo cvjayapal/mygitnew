@@ -17,6 +17,10 @@
 
 ## Attributes
 
+ node['jnj_win_facts']['directory'] ---> to create multiple directores
+ node['jnj_win_facts']['file'] ---> To create "C:\\ProgramData\\PuppetLabs\\facter\\facts.d\\aws_facts.ps1" file
+ node['jnj_win_facts']['path'] ---> To delete "C:\\ProgramData\\PuppetLabs\\facter\\facts.d\\scm_facts.ps1" file
+
 ## Usage
 
 ### jnj_win_facts::default
