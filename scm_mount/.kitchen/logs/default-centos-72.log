@@ -1,0 +1,27 @@
+I, [2016-12-20T10:11:53.284587 #8504]  INFO -- default-centos-72: -----> Verifying <default-centos-72>...
+E, [2016-12-20T10:13:12.401924 #8504] ERROR -- default-centos-72: Verify failed on instance <default-centos-72>.
+E, [2016-12-20T10:13:12.401924 #8504] ERROR -- default-centos-72: ------Exception-------
+E, [2016-12-20T10:13:12.401924 #8504] ERROR -- default-centos-72: Class: RuntimeError
+E, [2016-12-20T10:13:12.401924 #8504] ERROR -- default-centos-72: Message: Transport error, can't connect to 'ssh' backend: SSH session could not be established
+E, [2016-12-20T10:13:12.401924 #8504] ERROR -- default-centos-72: ----------------------
+E, [2016-12-20T10:13:12.401924 #8504] ERROR -- default-centos-72: ------Backtrace-------
+E, [2016-12-20T10:13:12.401924 #8504] ERROR -- default-centos-72: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/inspec-1.2.0/lib/inspec/backend.rb:44:in `rescue in create'
+E, [2016-12-20T10:13:12.401924 #8504] ERROR -- default-centos-72: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/inspec-1.2.0/lib/inspec/backend.rb:16:in `create'
+E, [2016-12-20T10:13:12.401924 #8504] ERROR -- default-centos-72: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/inspec-1.2.0/lib/inspec/runner.rb:64:in `configure_transport'
+E, [2016-12-20T10:13:12.401924 #8504] ERROR -- default-centos-72: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/inspec-1.2.0/lib/inspec/runner.rb:56:in `initialize'
+E, [2016-12-20T10:13:12.401924 #8504] ERROR -- default-centos-72: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/kitchen-inspec-0.15.2/lib/kitchen/verifier/inspec.rb:68:in `new'
+E, [2016-12-20T10:13:12.401924 #8504] ERROR -- default-centos-72: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/kitchen-inspec-0.15.2/lib/kitchen/verifier/inspec.rb:68:in `call'
+E, [2016-12-20T10:13:12.401924 #8504] ERROR -- default-centos-72: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:430:in `block in verify_action'
+E, [2016-12-20T10:13:12.401924 #8504] ERROR -- default-centos-72: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:520:in `synchronize_or_call'
+E, [2016-12-20T10:13:12.401924 #8504] ERROR -- default-centos-72: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:485:in `block in action'
+E, [2016-12-20T10:13:12.401924 #8504] ERROR -- default-centos-72: C:/opscode/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2016-12-20T10:13:12.401924 #8504] ERROR -- default-centos-72: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:484:in `action'
+E, [2016-12-20T10:13:12.401924 #8504] ERROR -- default-centos-72: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:422:in `verify_action'
+E, [2016-12-20T10:13:12.401924 #8504] ERROR -- default-centos-72: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:355:in `block in transition_to'
+E, [2016-12-20T10:13:12.401924 #8504] ERROR -- default-centos-72: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:354:in `each'
+E, [2016-12-20T10:13:12.401924 #8504] ERROR -- default-centos-72: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:354:in `transition_to'
+E, [2016-12-20T10:13:12.401924 #8504] ERROR -- default-centos-72: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:160:in `verify'
+E, [2016-12-20T10:13:12.401924 #8504] ERROR -- default-centos-72: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:201:in `public_send'
+E, [2016-12-20T10:13:12.401924 #8504] ERROR -- default-centos-72: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:201:in `run_action_in_thread'
+E, [2016-12-20T10:13:12.401924 #8504] ERROR -- default-centos-72: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:173:in `block (2 levels) in run_action'
+E, [2016-12-20T10:13:12.401924 #8504] ERROR -- default-centos-72: ----End Backtrace-----

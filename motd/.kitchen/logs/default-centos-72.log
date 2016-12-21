@@ -1,0 +1,7 @@
+I, [2016-11-07T17:33:56.084990 #804]  INFO -- default-centos-72: -----> Converging <default-centos-72>...
+I, [2016-11-07T17:33:56.088990 #804]  INFO -- default-centos-72: Preparing files for transfer
+I, [2016-11-07T17:33:56.088990 #804]  INFO -- default-centos-72: Preparing dna.json
+I, [2016-11-07T17:33:56.091990 #804]  INFO -- default-centos-72: Preparing current project directory as a cookbook
+I, [2016-11-07T17:33:56.137995 #804]  INFO -- default-centos-72: Removing non-cookbook files before transfer
+I, [2016-11-07T17:33:56.197001 #804]  INFO -- default-centos-72: Preparing solo.rb
+I, [2016-11-07T17:34:11.203501 #804]  INFO -- default-centos-72: [SSH] connection failed, retrying in 1 seconds (#<Net::SSH::ConnectionTimeout: Net::SSH::ConnectionTimeout>)

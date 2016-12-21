@@ -1,0 +1,3 @@
+# cleanup of old files in /root/.histdir
+
+0 8 * * * root cd $HOME/.histdir && find . -type f -mtime +90 -print -exec rm {} \; >> /var/log/histdir.log 2>&1

@@ -1,0 +1,1 @@
+default['scm_windows_shortcut']['title'] = 'scm_windows_shortcut'

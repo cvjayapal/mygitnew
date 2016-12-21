@@ -1,0 +1,15 @@
+<% if @_tnsnames and ! @_tnsnames.empty? -%>
+
+  <%- [@_tnsnames].flatten.compact.each do |tnsname| -%>
+	  
+<%= tnsname['net_service_name'] %> =
+ (DESCRIPTION =
+   (ADDRESS_LIST =
+     (ADDRESS = (PROTOCOL = TCP)(Host = <%= tnsname['host'] %>)(Port = <%= tnsname['port'] %>))
+   )
+ (CONNECT_DATA =
+   (SERVICE_NAME = <%= tnsname['service_name'] %>)
+ )
+)
+  <%- end -%>
+<% end -%>

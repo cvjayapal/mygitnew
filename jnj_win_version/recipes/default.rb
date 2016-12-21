@@ -11,22 +11,21 @@
 #     group 'Administrators'
 #   acion :create
 #
-# %w( C:\\ProgramData C:\\ProgramData\\JnJ C:\\ProgramData\\JnJ\\Its_core ).each do |path|
-# %w( C:\\ProgramData C:\\ProgramData\\JnJ C:\\ProgramData\\JnJ\\Its_core ).each do |path|
-directory "C:\\ProgramData\\JnJ\\Its_core" do
+
+%w(C:\\ProgramData C:\\ProgramData\\JnJ C:\\ProgramData\\JnJ\\Its_core ).each do |path|
+  directory path do
     owner 'Administrators'
     group 'Administrators'
     mode '0755'
     action :create
-    recursive true
   end
-# end
+end
 
 cookbook_file node['jnj_win_version']['file'] do
   source 'its_core_version.txt'
   owner 'Administrators'
   group 'Administrators'
-  mode 0664
+  mode  '0644'
   action :create
 end
 
@@ -34,6 +33,6 @@ cookbook_file node['jnj_win_version']['path'] do
   source 'version.txt'
   owner 'Administrators'
   group 'Administrators'
-  mode 0664
+  mode  '0644'
   action :create
 end

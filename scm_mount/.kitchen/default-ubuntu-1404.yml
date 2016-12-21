@@ -1,0 +1,6 @@
+---
+hostname: 127.0.0.1
+port: '2222'
+username: vagrant
+ssh_key: D:/chef/chef-starter/chef-repo/cookbooks/scm_mount/.kitchen/kitchen-vagrant/kitchen-scm_mount-default-ubuntu-1404/.vagrant/machines/default/virtualbox/private_key
+last_action: converge

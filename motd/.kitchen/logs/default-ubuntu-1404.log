@@ -1,0 +1,7 @@
+I, [2016-11-07T17:40:04.444107 #6292]  INFO -- default-ubuntu-1404: -----> Converging <default-ubuntu-1404>...
+I, [2016-11-07T17:40:04.447107 #6292]  INFO -- default-ubuntu-1404: Preparing files for transfer
+I, [2016-11-07T17:40:04.448107 #6292]  INFO -- default-ubuntu-1404: Preparing dna.json
+I, [2016-11-07T17:40:04.450107 #6292]  INFO -- default-ubuntu-1404: Preparing current project directory as a cookbook
+I, [2016-11-07T17:40:04.558118 #6292]  INFO -- default-ubuntu-1404: Removing non-cookbook files before transfer
+I, [2016-11-07T17:40:04.716134 #6292]  INFO -- default-ubuntu-1404: Preparing solo.rb
+I, [2016-11-07T17:40:19.734636 #6292]  INFO -- default-ubuntu-1404: [SSH] connection failed, retrying in 1 seconds (#<Net::SSH::ConnectionTimeout: Net::SSH::ConnectionTimeout>)

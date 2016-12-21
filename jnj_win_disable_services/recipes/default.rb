@@ -7,7 +7,6 @@
 # All rights reserved - Do Not Redistribute
 #
 
- 
 windows_service 'SharedAccess' do
   action :configure_startup
   startup_type :manual

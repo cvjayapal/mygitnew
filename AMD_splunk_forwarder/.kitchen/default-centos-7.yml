@@ -1,0 +1,6 @@
+---
+hostname: 127.0.0.1
+port: '2222'
+username: vagrant
+ssh_key: C:/RL_DATA/amd chef-repo/chef-repo/cookbooks/AMD_splunk_forwarder/.kitchen/kitchen-vagrant/kitchen-AMD_splunk_forwarder-default-centos-7/.vagrant/machines/default/virtualbox/private_key
+last_action: converge

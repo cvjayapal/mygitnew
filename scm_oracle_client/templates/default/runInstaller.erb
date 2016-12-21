@@ -1,0 +1,58 @@
+#!/bin/sh 
+
+EXITCODE=1
+
+# Log a message on the output and exit properly                                                                                                                                                             
+log_and_exit()                                                                                                                                                                                              
+{                                                                                                                                                                                                           
+    local type="$1"                                                                                                                                                                                         
+    shift                                                                                                                                                                                                   
+    local message="$*"                                                                                                                                                                                      
+    log $type $message                                                                                                                                                                                      
+    exit $EXITCODE                                                                                                                                                                                          
+}                                                                                                                                                                                                           
+# Log a message on the output                                                                                                                                                                               
+log()                                                                                                                                                                                                       
+{                                                                                                                                                                                                           
+    local type="$1"                                                                                                                                                                                         
+    shift                                                                                                                                                                                                   
+    local message="$*"                                                                                                                                                                                      
+    local dataflags="+%Y.%m.%d,%H:%M:%S"                                                                                                                                                                    
+                                                                                                                                                                                                            
+    echo "[$type] - `date $dataflags` - $message"                                                                                                                                                           
+}    
+
+log "INFO" "The runinstaller is starting..."
+
+export PATH=${PATH}:/bin:/usr/bin
+log "INFO" "PATH=${PATH}"
+
+/bin/su oracle -c "cd <%= @tmpdir %>/client;./runInstaller -silent -debug -force \
+FROM_LOCATION=/u02/software/client/stage/products.xml \
+UNIX_GROUP_NAME=oinstall \
+ORACLE_HOME=/u01/app/oracle/product/<%= @oracle_version %>.<%= @oracle_package_full %>/client_2 \
+ORACLE_HOME_NAME=\"OraClient11g_Home1\" \
+ORACLE_BASE=/u01/app/oracle \
+oracle.install.client.installType=\"Administrator\""
+
+log "INFO" "The runinstaller is started..."
+
+while ! grep 'SUCCESSFUL' $(ls -rt /u01/app/oraInventory/logs/oraInstall*.out | tail -1); do
+	log "INFO" "Not yet successful..."
+	sleep 2
+done
+
+SIZE=0
+NEWSIZE=1
+while [[ ${SIZE} -ne ${NEWSIZE} ]]; do
+  log "INFO" "SIZE=$SIZE NEWSIZE=${NEWSIZE} -- Size different, waiting 5 seconds."
+  SIZE=${NEWSIZE}
+  sleep 5
+  NEWSIZE=$(stat -c %s /u01/app/oraInventory/logs/oraInstall*.out | tail -1)
+done
+log "INFO" "SIZE=$SIZE NEWSIZE=${NEWSIZE} -- Size same, proceeding."
+sleep 30
+touch  /u01/app/oracle/product/<%= @oracle_version %>.<%= @oracle_package_full %>/client_2/bin/<%= oracle_version %>.<%= oracle_package_full %>_installed    
+log "INFO" "Finished."
+
+exit 0

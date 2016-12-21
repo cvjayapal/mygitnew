@@ -1,0 +1,6 @@
+#!/bin/expect -f
+spawn /opt/splunkforwarder/bin/splunk enable boot-start
+sleep 20
+expect "Do you agree with this license?: "
+send "y\r"
+expect eof;

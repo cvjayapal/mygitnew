@@ -1,0 +1,7 @@
+DEPENDENCIES
+  jnj_win_version
+    path: .
+    metadata: true
+
+GRAPH
+  jnj_win_version (0.1.0)

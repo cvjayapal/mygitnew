@@ -6,8 +6,8 @@ Installs rsyslog to replace sysklogd for client and/or server use. By default, s
 
 ### Platforms
 
- - CentOS
- - Ubuntu
+ - CentOS_7.1/7.2
+ - Ubuntu_14.04
 
 ###### Chef
 
@@ -24,7 +24,10 @@ To use the recipe[rsyslog::default] recipe, you'll need to set up a role to sear
 
 ## Attributes
 
- - This cookbook  no Attributes
+ - This cookbook  use Attributes
+
+ node[:log][:server] -- To define the server ip address 
+
 
 ####### Templates
 

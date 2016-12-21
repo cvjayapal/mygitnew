@@ -1,0 +1,20 @@
+I, [2016-12-09T15:02:07.516355 #7708]  INFO -- default-centos-72: -----> Converging <default-centos-72>...
+I, [2016-12-09T15:02:07.522201 #7708]  INFO -- default-centos-72: Preparing files for transfer
+I, [2016-12-09T15:02:07.522201 #7708]  INFO -- default-centos-72: Preparing dna.json
+I, [2016-12-09T15:02:07.525126 #7708]  INFO -- default-centos-72: Preparing current project directory as a cookbook
+I, [2016-12-09T15:02:07.563254 #7708]  INFO -- default-centos-72: Removing non-cookbook files before transfer
+I, [2016-12-09T15:02:07.595525 #7708]  INFO -- default-centos-72: Preparing solo.rb
+I, [2016-12-09T15:02:10.066380 #7708]  INFO -- default-centos-72: -----> Chef Omnibus installation detected (install only if missing)
+I, [2016-12-09T15:02:10.111386 #7708]  INFO -- default-centos-72: Transferring files to <default-centos-72>
+I, [2016-12-09T15:02:11.983582 #7708]  INFO -- default-centos-72: Starting Chef Client, version 12.16.42
+I, [2016-12-09T15:02:13.535704 #7708]  INFO -- default-centos-72: resolving cookbooks for run list: ["hostname::default"]
+I, [2016-12-09T15:02:13.557212 #7708]  INFO -- default-centos-72: Synchronizing Cookbooks:
+I, [2016-12-09T15:02:13.557212 #7708]  INFO -- default-centos-72:   - hostname (0.1.0)
+I, [2016-12-09T15:02:13.568942 #7708]  INFO -- default-centos-72: Installing Cookbook Gems:
+I, [2016-12-09T15:02:13.568942 #7708]  INFO -- default-centos-72: Compiling Cookbooks...
+I, [2016-12-09T15:02:13.568942 #7708]  INFO -- default-centos-72: Converging 0 resources
+I, [2016-12-09T15:02:13.612935 #7708]  INFO -- default-centos-72: 
+I, [2016-12-09T15:02:13.612935 #7708]  INFO -- default-centos-72: Running handlers:
+I, [2016-12-09T15:02:13.612935 #7708]  INFO -- default-centos-72: Running handlers complete
+I, [2016-12-09T15:02:13.612935 #7708]  INFO -- default-centos-72: Chef Client finished, 0/0 resources updated in 01 seconds
+I, [2016-12-09T15:02:13.674523 #7708]  INFO -- default-centos-72: Finished converging <default-centos-72> (0m6.15s).

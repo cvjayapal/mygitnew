@@ -1,0 +1,4 @@
+ $WshShell = New-Object -comObject WScript.Shell
+$Shortcut = $WshShell.CreateShortcut("<%=@shortcut%>")
+$Shortcut.TargetPath = "<%=@target%>"
+$Shortcut.Save()

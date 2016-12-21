@@ -1,25 +1,8 @@
-# ---
-# driver:
-#   name: vagrant
-
-# provisioner:
-#   name: chef_solo
-
-# platforms:
-#   - name: ubuntu-14.04
-#   - name: centos-7.2
-
-# suites:
-#   - name: default
-#     run_list:
-#       - recipe[jnj_win_disable_services::default]
-#     attributes:
-
 driver:
   name: vagrant
   #box: centos6.5_64
   # box: ubuntu1464
-  box: win2008r2
+  box: win2k8r2
   # box: centos71
   network:
   - ["private_network", ip: "192.168.33.22"]

@@ -1,0 +1,9 @@
+I, [2016-11-30T22:18:36.705604 #3304]  INFO -- default-centos-72: -----> Creating <default-centos-72>...
+I, [2016-11-30T22:18:39.159052 #3304]  INFO -- default-centos-72: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2016-11-30T22:18:39.362521 #3304]  INFO -- default-centos-72: ==> default: Box 'bento/centos-7.2' could not be found. Attempting to find and install...
+I, [2016-11-30T22:18:39.362521 #3304]  INFO -- default-centos-72:     default: Box Provider: virtualbox
+I, [2016-11-30T22:18:39.363535 #3304]  INFO -- default-centos-72:     default: Box Version: >= 0
+I, [2016-11-30T22:18:43.393971 #3304]  INFO -- default-centos-72: ==> default: Loading metadata for box 'bento/centos-7.2'
+I, [2016-11-30T22:18:43.393971 #3304]  INFO -- default-centos-72:     default: URL: https://atlas.hashicorp.com/bento/centos-7.2
+I, [2016-11-30T22:18:45.232624 #3304]  INFO -- default-centos-72: ==> default: Adding box 'bento/centos-7.2' (v2.3.0) for provider: virtualbox
+I, [2016-11-30T22:18:45.265703 #3304]  INFO -- default-centos-72:     default: Downloading: https://atlas.hashicorp.com/bento/boxes/centos-7.2/versions/2.3.0/providers/virtualbox.box

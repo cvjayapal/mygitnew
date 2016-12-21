@@ -1,0 +1,33 @@
+I, [2016-11-10T13:14:06.471008 #9092]  INFO -- default-centos-72: -----> Converging <default-centos-72>...
+I, [2016-11-10T13:14:06.473509 #9092]  INFO -- default-centos-72: Preparing files for transfer
+I, [2016-11-10T13:14:06.474009 #9092]  INFO -- default-centos-72: Preparing dna.json
+I, [2016-11-10T13:14:06.476009 #9092]  INFO -- default-centos-72: Preparing current project directory as a cookbook
+I, [2016-11-10T13:14:06.569528 #9092]  INFO -- default-centos-72: Removing non-cookbook files before transfer
+I, [2016-11-10T13:14:06.644043 #9092]  INFO -- default-centos-72: Preparing solo.rb
+I, [2016-11-10T13:14:09.117038 #9092]  INFO -- default-centos-72: -----> Chef Omnibus installation detected (install only if missing)
+I, [2016-11-10T13:14:09.201554 #9092]  INFO -- default-centos-72: Transferring files to <default-centos-72>
+I, [2016-11-10T13:14:15.484811 #9092]  INFO -- default-centos-72: Starting Chef Client, version 12.16.42
+I, [2016-11-10T13:14:18.366387 #9092]  INFO -- default-centos-72: resolving cookbooks for run list: ["reboot::default"]
+I, [2016-11-10T13:14:18.396893 #9092]  INFO -- default-centos-72: Synchronizing Cookbooks:
+I, [2016-11-10T13:14:18.417397 #9092]  INFO -- default-centos-72:   - reboot (0.1.0)
+I, [2016-11-10T13:14:18.417897 #9092]  INFO -- default-centos-72: Installing Cookbook Gems:
+I, [2016-11-10T13:14:18.417897 #9092]  INFO -- default-centos-72: Compiling Cookbooks...
+I, [2016-11-10T13:14:18.437901 #9092]  INFO -- default-centos-72: Converging 2 resources
+I, [2016-11-10T13:14:18.437901 #9092]  INFO -- default-centos-72: Recipe: reboot::default
+I, [2016-11-10T13:14:18.518417 #9092]  INFO -- default-centos-72:   * execute[needs_reboot] action run
+I, [2016-11-10T13:14:18.518417 #9092]  INFO -- default-centos-72:     - execute /bin/tput smso > /dev/"[pt]t[ys][0-9]"; /bin/echo "This system needs to be REBOOTED" > /dev/[pt]t[ys][0-9]; /bin/tput rmso > /dev/[pt]t[ys][0-9]
+I, [2016-11-10T13:14:18.518918 #9092]  INFO -- default-centos-72:   * reboot[requires_reboot] action request_reboot[2016-11-10T07:44:17+00:00] WARN: Reboot requested:'requires_reboot'
+I, [2016-11-10T13:14:18.518918 #9092]  INFO -- default-centos-72: 
+I, [2016-11-10T13:14:18.518918 #9092]  INFO -- default-centos-72:     - request a system reboot to occur if the run succeeds
+I, [2016-11-10T13:14:18.560926 #9092]  INFO -- default-centos-72: 
+I, [2016-11-10T13:14:18.561426 #9092]  INFO -- default-centos-72: Running handlers:
+I, [2016-11-10T13:14:18.561926 #9092]  INFO -- default-centos-72: Running handlers complete
+I, [2016-11-10T13:14:18.561926 #9092]  INFO -- default-centos-72: Chef Client finished, 2/2 resources updated in 03 seconds
+I, [2016-11-10T13:14:18.561926 #9092]  INFO -- default-centos-72: [2016-11-10T07:44:17+00:00] WARN: Rebooting server at a recipe's request. Details: {:delay_mins=>1, :reason=>"This system needs to be REBOOTED", :timestamp=>2016-11-10 07:44:17 +0000, :requested_by=>"requires_reboot"}
+I, [2016-11-10T13:14:18.601934 #9092]  INFO -- default-centos-72: 
+I, [2016-11-10T13:14:18.602434 #9092]  INFO -- default-centos-72: Broadcast message from root@default-centos-72 (Thu 2016-11-10 07:44:17 UTC):
+I, [2016-11-10T13:14:18.602434 #9092]  INFO -- default-centos-72: 
+I, [2016-11-10T13:14:18.602434 #9092]  INFO -- default-centos-72: This system needs to be REBOOTED
+I, [2016-11-10T13:14:18.602434 #9092]  INFO -- default-centos-72: The system is going down for reboot at Thu 2016-11-10 07:45:17 UTC!
+I, [2016-11-10T13:14:18.602934 #9092]  INFO -- default-centos-72: 
+I, [2016-11-10T13:14:18.676949 #9092]  INFO -- default-centos-72: Finished converging <default-centos-72> (0m12.20s).
