@@ -22,7 +22,7 @@
 end
 
 cookbook_file node['jnj_win_version']['file'] do
-  source 'its_core_version.txt'
+  source 'version.txt'
   owner 'Administrators'
   group 'Administrators'
   mode  '0644'
