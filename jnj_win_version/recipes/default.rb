@@ -2,7 +2,7 @@
 # Cookbook Name:: jnj_win_version
 # Recipe:: default
 #
-# Copyright 2016, YOUR_COMPANY_NAME
+# Copyright 2016, Relavance Lab
 #
 # All rights reserved - Do Not Redistribute
 
