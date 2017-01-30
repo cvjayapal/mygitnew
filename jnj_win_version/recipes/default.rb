@@ -6,12 +6,6 @@
 #
 # All rights reserved - Do Not Redistribute
 
-# directory 'C:\\ProgramData\\JnJ\\Its_core' do
-#   owner 'Administrators'
-#     group 'Administrators'
-#   acion :create
-#
-
 %w(C:\\ProgramData C:\\ProgramData\\JnJ C:\\ProgramData\\JnJ\\Its_core ).each do |path|
   directory path do
     owner 'Administrators'
