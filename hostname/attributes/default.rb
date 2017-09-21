@@ -1,1 +1,1 @@
-default['host']['name'] = 'variable'
+default['hostname']['name'] = 'variable'
