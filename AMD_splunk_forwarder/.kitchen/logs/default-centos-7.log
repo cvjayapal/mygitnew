@@ -1,0 +1,29 @@
+I, [2016-10-12T20:51:58.531909 #8164]  INFO -- default-centos-7: -----> Converging <default-centos-7>...
+I, [2016-10-12T20:51:58.533867 #8164]  INFO -- default-centos-7: Preparing files for transfer
+I, [2016-10-12T20:51:58.534845 #8164]  INFO -- default-centos-7: Preparing dna.json
+I, [2016-10-12T20:51:58.537023 #8164]  INFO -- default-centos-7: Preparing current project directory as a cookbook
+I, [2016-10-12T20:51:58.556574 #8164]  INFO -- default-centos-7: Removing non-cookbook files before transfer
+I, [2016-10-12T20:51:58.567365 #8164]  INFO -- default-centos-7: Preparing data_bags
+I, [2016-10-12T20:51:58.569309 #8164]  INFO -- default-centos-7: Preparing solo.rb
+I, [2016-10-12T20:52:00.643962 #8164]  INFO -- default-centos-7: -----> Chef Omnibus installation detected (install only if missing)
+I, [2016-10-12T20:52:00.679227 #8164]  INFO -- default-centos-7: Transferring files to <default-centos-7>
+I, [2016-10-12T20:52:02.288951 #8164]  INFO -- default-centos-7: Starting Chef Client, version 12.14.89
+I, [2016-10-12T20:52:03.826376 #8164]  INFO -- default-centos-7: resolving cookbooks for run list: ["AMD_splunk_forwarder"]
+I, [2016-10-12T20:52:03.837131 #8164]  INFO -- default-centos-7: Synchronizing Cookbooks:
+I, [2016-10-12T20:52:03.847885 #8164]  INFO -- default-centos-7:   - AMD_splunk_forwarder (0.1.0)
+I, [2016-10-12T20:52:03.847885 #8164]  INFO -- default-centos-7: Installing Cookbook Gems:
+I, [2016-10-12T20:52:03.847885 #8164]  INFO -- default-centos-7: Compiling Cookbooks...
+I, [2016-10-12T20:52:03.847885 #8164]  INFO -- default-centos-7: Converging 4 resources
+I, [2016-10-12T20:52:03.847885 #8164]  INFO -- default-centos-7: Recipe: AMD_splunk_forwarder::default
+I, [2016-10-12T20:52:05.534852 #8164]  INFO -- default-centos-7:   * yum_package[expect] action install (up to date)
+I, [2016-10-12T20:52:16.884382 #8164]  INFO -- default-centos-7:   * execute[download splunk forwarder] action run
+I, [2016-10-12T20:52:16.885361 #8164]  INFO -- default-centos-7:     - execute 	wget -O "splunkforwarder-6.5.0-59c8927def0f-linux-2.6-x86_64.rpm" "https://www.splunk.com/bin/splunk/DownloadActivityServlet?architecture=x86_64&platform=linux&version=6.5.0&product=universalforwarder&filename=splunkforwarder-6.5.0-59c8927def0f-linux-2.6-x86_64.rpm&wget=true"
+I, [2016-10-12T20:52:16.885361 #8164]  INFO -- default-centos-7:   
+I, [2016-10-12T20:52:16.887316 #8164]  INFO -- default-centos-7:   * template[/tmp/splunk.sh] action create (up to date)
+I, [2016-10-12T20:52:56.962811 #8164]  INFO -- default-centos-7:   * execute[enable splunk on boot] action run
+I, [2016-10-12T20:52:56.962811 #8164]  INFO -- default-centos-7:     - execute ./splunk.sh
+I, [2016-10-12T20:52:56.998006 #8164]  INFO -- default-centos-7: 
+I, [2016-10-12T20:52:56.998006 #8164]  INFO -- default-centos-7: Running handlers:
+I, [2016-10-12T20:52:56.998006 #8164]  INFO -- default-centos-7: Running handlers complete
+I, [2016-10-12T20:52:56.998006 #8164]  INFO -- default-centos-7: Chef Client finished, 2/4 resources updated in 54 seconds
+I, [2016-10-12T20:52:57.063064 #8164]  INFO -- default-centos-7: Finished converging <default-centos-7> (0m58.53s).

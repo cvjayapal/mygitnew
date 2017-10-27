@@ -1,0 +1,3 @@
+I, [2016-12-21T20:55:12.998666 #5536]  INFO -- Kitchen: -----> Starting Kitchen (v1.13.2)
+I, [2016-12-21T20:55:26.806043 #5536]  INFO -- Kitchen: -----> Destroying <default-windows2008r2>...
+I, [2016-12-21T20:55:32.410587 #5536]  INFO -- Kitchen: -----> Kitchen is finished. (0m19.40s)

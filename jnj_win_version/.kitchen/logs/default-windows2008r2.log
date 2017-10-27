@@ -1,0 +1,3 @@
+I, [2016-12-15T19:02:05.523296 #8716]  INFO -- default-windows2008r2: -----> Verifying <default-windows2008r2>...
+I, [2016-12-15T19:02:05.623992 #8716]  INFO -- default-windows2008r2: Use `D:/repo/chef-repo/cookbooks/jnj_win_version/test/integration/default` for testing
+I, [2016-12-15T19:02:23.601565 #8716]  INFO -- default-windows2008r2: Finished verifying <default-windows2008r2> (0m18.07s).

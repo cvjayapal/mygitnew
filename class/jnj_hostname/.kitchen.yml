@@ -1,0 +1,63 @@
+# ---
+# driver:
+#   name: ec2
+#   aws_ssh_key_id: <%= ENV['KITCHEN_USER'] %>
+#   region: us-east-1
+#   availability_zone: us-east-1a
+#   security_group_ids: ["sg-c884d3ad","sg-ff711485"]
+#   iam_profile_name: itx-031-app-testsystem-development-LZMMTAAJERNZ
+#   subnet_id: subnet-29e0285e
+#   require_chef_omnibus: true
+#   instance_type: t2.medium
+#   associate_public_ip: false
+#   vpc_mode: true
+#   vpc: vpc-ee90388b
+#   tags:
+#     Name: "<%= ENV['KITCHEN_USER'] %>-jnj_hostname-test-kitchen"
+#     created-by: "test-kitchen"
+
+# provisioner:
+#   name: chef_zero
+
+# verifier:
+#   name: inspec
+
+# platforms:
+#   - name: rhel-7
+#     driver:
+#       image_id: ami-45eb6652
+
+# transport:
+#   connection_timeout: 1800
+#   connection_retries: 50
+#   max_wait_until_ready: 7200 # 7200/3 (3s delay is hardcoded in TK source code ) = 2400s (40min)
+#   username: <%= ENV['KITCHEN_USER'] %>
+#   password: <%= ENV['KITCHEN_PASSWD'] %>
+
+# suites:
+#   - name: default
+#     run_list:
+#       - recipe[jnj_hostname::default]
+#     verifier:
+#       name: inspec
+#       inspec_tests:
+#         - test/integration/default
+#     attributes:
+
+
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_solo
+
+platforms:
+  #- name: ubuntu-14.04
+  - name: centos-7.2
+
+suites:
+  - name: default
+    run_list:
+      - recipe[jnj_hostname::default]
+    attributes:

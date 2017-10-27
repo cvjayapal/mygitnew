@@ -1,0 +1,6 @@
+---
+hostname: 127.0.0.1
+port: '2222'
+username: vagrant
+ssh_key: C:/Users/rle0401/chef-repo/cookbooks/jnj_rsyslog/.kitchen/kitchen-vagrant/kitchen-jnj_rsyslog-default-centos-72/.vagrant/machines/default/virtualbox/private_key
+last_action: converge

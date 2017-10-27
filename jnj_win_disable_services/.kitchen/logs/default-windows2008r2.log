@@ -1,0 +1,97 @@
+I, [2016-12-01T08:48:44.602452 #6024]  INFO -- default-windows2008r2: -----> Cleaning up any prior instances of <default-windows2008r2>
+I, [2016-12-01T08:48:44.606454 #6024]  INFO -- default-windows2008r2: -----> Destroying <default-windows2008r2>...
+I, [2016-12-01T08:48:44.606454 #6024]  INFO -- default-windows2008r2: Finished destroying <default-windows2008r2> (0m0.00s).
+I, [2016-12-01T08:48:44.606454 #6024]  INFO -- default-windows2008r2: -----> Testing <default-windows2008r2>
+I, [2016-12-01T08:48:44.606454 #6024]  INFO -- default-windows2008r2: -----> Creating <default-windows2008r2>...
+I, [2016-12-01T08:48:47.190885 #6024]  INFO -- default-windows2008r2: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2016-12-01T08:48:47.311233 #6024]  INFO -- default-windows2008r2: There are errors in the configuration of this machine. Please fix
+I, [2016-12-01T08:48:47.311233 #6024]  INFO -- default-windows2008r2: the following errors and try again:
+I, [2016-12-01T08:48:47.311233 #6024]  INFO -- default-windows2008r2: 
+I, [2016-12-01T08:48:47.311233 #6024]  INFO -- default-windows2008r2: vm:
+I, [2016-12-01T08:48:47.311233 #6024]  INFO -- default-windows2008r2: * The shared folder guest path must be absolute: $env:TEMPomnibusche
+I, [2016-12-01T08:48:47.311233 #6024]  INFO -- default-windows2008r2: 
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: Create failed on instance <default-windows2008r2>.
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: ------Exception-------
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: Bringing machine 'default' up with 'virtualbox' provider...
+STDERR: There are errors in the configuration of this machine. Please fix
+the following errors and try again:
+
+vm:
+* The shared folder guest path must be absolute: $env:TEMPomnibusche
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: ----------------------
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: ------Backtrace-------
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/shell_out.rb:73:in `rescue in run_command'
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/shell_out.rb:61:in `run_command'
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: C:/Users/rle0401/AppData/Local/chefdk/gem/ruby/2.3.0/gems/kitchen-vagrant-0.21.0/lib/kitchen/driver/vagrant.rb:365:in `run_command'
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: C:/Users/rle0401/AppData/Local/chefdk/gem/ruby/2.3.0/gems/kitchen-vagrant-0.21.0/lib/kitchen/driver/vagrant.rb:324:in `run'
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: C:/Users/rle0401/AppData/Local/chefdk/gem/ruby/2.3.0/gems/kitchen-vagrant-0.21.0/lib/kitchen/driver/vagrant.rb:395:in `run_vagrant_up'
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: C:/Users/rle0401/AppData/Local/chefdk/gem/ruby/2.3.0/gems/kitchen-vagrant-0.21.0/lib/kitchen/driver/vagrant.rb:96:in `create'
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:456:in `public_send'
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:456:in `block in perform_action'
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:517:in `block in synchronize_or_call'
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:515:in `synchronize'
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:515:in `synchronize_or_call'
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:485:in `block in action'
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:484:in `action'
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:456:in `perform_action'
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:366:in `create_action'
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:355:in `block in transition_to'
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:354:in `each'
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:354:in `transition_to'
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:160:in `verify'
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:189:in `block in test'
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:185:in `test'
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:201:in `public_send'
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:201:in `run_action_in_thread'
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:173:in `block (2 levels) in run_action'
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/logging-2.1.0/lib/logging/diagnostic_context.rb:450:in `block in create_with_logging_context'
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: ----End Backtrace-----
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: ---Nested Exception---
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: Class: Mixlib::ShellOut::ShellCommandFailed
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: Bringing machine 'default' up with 'virtualbox' provider...
+STDERR: There are errors in the configuration of this machine. Please fix
+the following errors and try again:
+
+vm:
+* The shared folder guest path must be absolute: $env:TEMPomnibusche
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: ----------------------
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: ------Backtrace-------
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/shell_out.rb:73:in `rescue in run_command'
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/shell_out.rb:61:in `run_command'
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: C:/Users/rle0401/AppData/Local/chefdk/gem/ruby/2.3.0/gems/kitchen-vagrant-0.21.0/lib/kitchen/driver/vagrant.rb:365:in `run_command'
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: C:/Users/rle0401/AppData/Local/chefdk/gem/ruby/2.3.0/gems/kitchen-vagrant-0.21.0/lib/kitchen/driver/vagrant.rb:324:in `run'
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: C:/Users/rle0401/AppData/Local/chefdk/gem/ruby/2.3.0/gems/kitchen-vagrant-0.21.0/lib/kitchen/driver/vagrant.rb:395:in `run_vagrant_up'
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: C:/Users/rle0401/AppData/Local/chefdk/gem/ruby/2.3.0/gems/kitchen-vagrant-0.21.0/lib/kitchen/driver/vagrant.rb:96:in `create'
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:456:in `public_send'
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:456:in `block in perform_action'
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:517:in `block in synchronize_or_call'
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:515:in `synchronize'
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:515:in `synchronize_or_call'
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:485:in `block in action'
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:484:in `action'
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:456:in `perform_action'
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:366:in `create_action'
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:355:in `block in transition_to'
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:354:in `each'
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:354:in `transition_to'
+E, [2016-12-01T08:48:47.346863 #6024] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:160:in `verify'
+E, [2016-12-01T08:48:47.350846 #6024] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:189:in `block in test'
+E, [2016-12-01T08:48:47.350846 #6024] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2016-12-01T08:48:47.350846 #6024] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:185:in `test'
+E, [2016-12-01T08:48:47.350846 #6024] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:201:in `public_send'
+E, [2016-12-01T08:48:47.350846 #6024] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:201:in `run_action_in_thread'
+E, [2016-12-01T08:48:47.350846 #6024] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:173:in `block (2 levels) in run_action'
+E, [2016-12-01T08:48:47.350846 #6024] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/logging-2.1.0/lib/logging/diagnostic_context.rb:450:in `block in create_with_logging_context'
+E, [2016-12-01T08:48:47.350846 #6024] ERROR -- default-windows2008r2: ----End Backtrace-----

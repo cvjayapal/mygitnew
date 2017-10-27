@@ -1,0 +1,139 @@
+I, [2016-11-29T18:20:42.011770 #4684]  INFO -- default-windows2008r2: -----> Creating <default-windows2008r2>...
+I, [2016-11-29T18:20:44.880902 #4684]  INFO -- default-windows2008r2: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2016-11-29T18:20:45.013002 #4684]  INFO -- default-windows2008r2: ==> default: Importing base box 'win2008r2'...
+I, [2016-11-29T18:22:56.803844 #4684]  INFO -- default-windows2008r2: [KProgress: 10%[KProgress: 20%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+I, [2016-11-29T18:22:58.564285 #4684]  INFO -- default-windows2008r2: ==> default: Setting the name of the VM: kitchen-jnj_win_hostname-default-windows2008r2_default_1480423978431_54399
+I, [2016-11-29T18:23:03.868515 #4684]  INFO -- default-windows2008r2: ==> default: Clearing any previously set network interfaces...
+I, [2016-11-29T18:23:04.350634 #4684]  INFO -- default-windows2008r2: ==> default: Preparing network interfaces based on configuration...
+I, [2016-11-29T18:23:04.350634 #4684]  INFO -- default-windows2008r2:     default: Adapter 1: nat
+I, [2016-11-29T18:23:04.350634 #4684]  INFO -- default-windows2008r2:     default: Adapter 2: hostonly
+I, [2016-11-29T18:23:04.613839 #4684]  INFO -- default-windows2008r2: ==> default: Forwarding ports...
+I, [2016-11-29T18:23:04.712085 #4684]  INFO -- default-windows2008r2:     default: 5985 (guest) => 5985 (host) (adapter 1)
+I, [2016-11-29T18:23:04.712085 #4684]  INFO -- default-windows2008r2:     default: 3391 (guest) => 33391 (host) (adapter 1)
+I, [2016-11-29T18:23:04.712085 #4684]  INFO -- default-windows2008r2:     default: 5986 (guest) => 55986 (host) (adapter 1)
+I, [2016-11-29T18:23:04.712085 #4684]  INFO -- default-windows2008r2:     default: 22 (guest) => 2222 (host) (adapter 1)
+I, [2016-11-29T18:23:05.079469 #4684]  INFO -- default-windows2008r2: ==> default: Booting VM...
+I, [2016-11-29T18:23:12.419980 #4684]  INFO -- default-windows2008r2: ==> default: Waiting for machine to boot. This may take a few minutes...
+I, [2016-11-29T18:23:12.903917 #4684]  INFO -- default-windows2008r2:     default: WinRM address: 127.0.0.1:5985
+I, [2016-11-29T18:23:12.903917 #4684]  INFO -- default-windows2008r2:     default: WinRM username: vagrant
+I, [2016-11-29T18:23:12.903917 #4684]  INFO -- default-windows2008r2:     default: WinRM execution_time_limit: PT2H
+I, [2016-11-29T18:23:12.903917 #4684]  INFO -- default-windows2008r2:     default: WinRM transport: negotiate
+I, [2016-11-29T18:25:53.166532 #4684]  INFO -- default-windows2008r2: ==> default: Machine booted and ready!
+I, [2016-11-29T18:25:53.166532 #4684]  INFO -- default-windows2008r2: ==> default: Checking for guest additions in VM...
+I, [2016-11-29T18:25:53.469448 #4684]  INFO -- default-windows2008r2:     default: No guest additions were detected on the base box for this VM! Guest
+I, [2016-11-29T18:25:53.469448 #4684]  INFO -- default-windows2008r2:     default: additions are required for forwarded ports, shared folders, host only
+I, [2016-11-29T18:25:53.469448 #4684]  INFO -- default-windows2008r2:     default: networking, and more. If SSH fails on this machine, please install
+I, [2016-11-29T18:25:53.470403 #4684]  INFO -- default-windows2008r2:     default: the guest additions and repackage the box to continue.
+I, [2016-11-29T18:25:53.470403 #4684]  INFO -- default-windows2008r2:     default: 
+I, [2016-11-29T18:25:53.470403 #4684]  INFO -- default-windows2008r2:     default: This is not an error message; everything may continue to work properly,
+I, [2016-11-29T18:25:53.470403 #4684]  INFO -- default-windows2008r2:     default: in which case you may ignore this message.
+I, [2016-11-29T18:25:53.633543 #4684]  INFO -- default-windows2008r2: ==> default: Configuring and enabling network interfaces...
+I, [2016-11-29T18:26:00.838668 #4684]  INFO -- default-windows2008r2: ==> default: Machine not provisioned because `--no-provision` is specified.
+I, [2016-11-29T18:26:17.243321 #4684]  INFO -- default-windows2008r2: [WinRM] Established
+I, [2016-11-29T18:26:17.256052 #4684]  INFO -- default-windows2008r2: 
+I, [2016-11-29T18:26:17.368722 #4684]  INFO -- default-windows2008r2: Vagrant instance <default-windows2008r2> created.
+I, [2016-11-29T18:26:17.373610 #4684]  INFO -- default-windows2008r2: Finished creating <default-windows2008r2> (5m35.35s).
+I, [2016-11-29T18:26:17.374614 #4684]  INFO -- default-windows2008r2: -----> Converging <default-windows2008r2>...
+I, [2016-11-29T18:26:17.380453 #4684]  INFO -- default-windows2008r2: Preparing files for transfer
+I, [2016-11-29T18:26:17.381432 #4684]  INFO -- default-windows2008r2: Preparing dna.json
+I, [2016-11-29T18:26:17.386319 #4684]  INFO -- default-windows2008r2: Preparing current project directory as a cookbook
+I, [2016-11-29T18:26:17.488855 #4684]  INFO -- default-windows2008r2: Removing non-cookbook files before transfer
+I, [2016-11-29T18:26:17.562181 #4684]  INFO -- default-windows2008r2: Preparing data_bags
+I, [2016-11-29T18:26:17.565130 #4684]  INFO -- default-windows2008r2: Preparing solo.rb
+I, [2016-11-29T18:26:18.308421 #4684]  INFO -- default-windows2008r2: -----> Installing Chef Omnibus (install only if missing)
+I, [2016-11-29T18:26:26.453282 #4684]  INFO -- default-windows2008r2: Downloading package from https://packages.chef.io/files/stable/chef/12.16.42/windows/2012r2/chef-client-12.16.42-1-x64.msi
+I, [2016-11-29T18:27:43.204430 #4684]  INFO -- default-windows2008r2: Download complete.
+I, [2016-11-29T18:27:43.808733 #4684]  INFO -- default-windows2008r2: Successfully verified C:\Users\vagrant\AppData\Local\Temp\chef-client-12.16.42-1-x64.msi
+I, [2016-11-29T18:27:43.822436 #4684]  INFO -- default-windows2008r2: Installing Chef Omnibus package C:\Users\vagrant\AppData\Local\Temp\chef-client-12.16.42-1-x64.msi
+I, [2016-11-29T18:29:36.372381 #4684]  INFO -- default-windows2008r2: Installation complete
+I, [2016-11-29T18:29:36.659771 #4684]  INFO -- default-windows2008r2: Transferring files to <default-windows2008r2>
+I, [2016-11-29T18:29:56.711833 #4684]  INFO -- default-windows2008r2: Starting Chef Client, version 12.16.42
+I, [2016-11-29T18:30:35.772762 #4684]  INFO -- default-windows2008r2: Creating a new client identity for default-windows2008r2 using the validator key.
+I, [2016-11-29T18:30:35.776672 #4684]  INFO -- default-windows2008r2: resolving cookbooks for run list: ["jnj_win_hostname::default"]
+I, [2016-11-29T18:30:35.779585 #4684]  INFO -- default-windows2008r2: Synchronizing Cookbooks:
+I, [2016-11-29T18:30:35.782518 #4684]  INFO -- default-windows2008r2:   - jnj_win_hostname (0.1.0)
+I, [2016-11-29T18:30:35.785451 #4684]  INFO -- default-windows2008r2: Installing Cookbook Gems:
+I, [2016-11-29T18:30:35.789383 #4684]  INFO -- default-windows2008r2: Compiling Cookbooks...
+I, [2016-11-29T18:30:35.792315 #4684]  INFO -- default-windows2008r2: 
+I, [2016-11-29T18:30:35.795247 #4684]  INFO -- default-windows2008r2: ================================================================================
+I, [2016-11-29T18:30:35.798179 #4684]  INFO -- default-windows2008r2: Recipe Compile Error in C:/Users/vagrant/AppData/Local/Temp/kitchen/cache/cookbooks/jnj_win_hostname/recipes/default.rb
+I, [2016-11-29T18:30:35.802071 #4684]  INFO -- default-windows2008r2: ================================================================================
+I, [2016-11-29T18:30:35.805984 #4684]  INFO -- default-windows2008r2: 
+I, [2016-11-29T18:30:35.808916 #4684]  INFO -- default-windows2008r2: SyntaxError
+I, [2016-11-29T18:30:35.811849 #4684]  INFO -- default-windows2008r2: -----------
+I, [2016-11-29T18:30:35.815760 #4684]  INFO -- default-windows2008r2: C:/Users/vagrant/AppData/Local/Temp/kitchen/cache/cookbooks/jnj_win_hostname/recipes/default.rb:18: syntax error, unexpected tCONSTANT, expecting keyword_end
+I, [2016-11-29T18:30:35.818691 #4684]  INFO -- default-windows2008r2:       notify    'Reboot['Complete_Rename']'
+I, [2016-11-29T18:30:35.822621 #4684]  INFO -- default-windows2008r2:                                  ^
+I, [2016-11-29T18:30:35.825553 #4684]  INFO -- default-windows2008r2: C:/Users/vagrant/AppData/Local/Temp/kitchen/cache/cookbooks/jnj_win_hostname/recipes/default.rb:24: syntax error, unexpected end-of-input, expecting keyword_end
+I, [2016-11-29T18:30:35.828486 #4684]  INFO -- default-windows2008r2: 
+I, [2016-11-29T18:30:35.832397 #4684]  INFO -- default-windows2008r2: Platform:
+I, [2016-11-29T18:30:35.835312 #4684]  INFO -- default-windows2008r2: ---------
+I, [2016-11-29T18:30:35.839220 #4684]  INFO -- default-windows2008r2: x64-mingw32
+I, [2016-11-29T18:30:35.842153 #4684]  INFO -- default-windows2008r2: 
+I, [2016-11-29T18:30:35.845086 #4684]  INFO -- default-windows2008r2: 
+I, [2016-11-29T18:30:35.848997 #4684]  INFO -- default-windows2008r2: Running handlers:
+I, [2016-11-29T18:30:35.851930 #4684]  INFO -- default-windows2008r2: [2016-11-29T05:00:35-08:00] ERROR: Running exception handlers
+I, [2016-11-29T18:30:35.854862 #4684]  INFO -- default-windows2008r2: Running handlers complete
+I, [2016-11-29T18:30:35.857796 #4684]  INFO -- default-windows2008r2: [2016-11-29T05:00:35-08:00] ERROR: Exception handlers complete
+I, [2016-11-29T18:30:35.861708 #4684]  INFO -- default-windows2008r2: Chef Client failed. 0 resources updated in 39 seconds
+I, [2016-11-29T18:30:35.864641 #4684]  INFO -- default-windows2008r2: [2016-11-29T05:00:35-08:00] FATAL: Stacktrace dumped to C:/Users/vagrant/AppData/Local/Temp/kitchen/cache/chef-stacktrace.out
+I, [2016-11-29T18:30:35.868549 #4684]  INFO -- default-windows2008r2: [2016-11-29T05:00:35-08:00] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+I, [2016-11-29T18:30:35.872479 #4684]  INFO -- default-windows2008r2: [2016-11-29T05:00:35-08:00] FATAL: SyntaxError: C:/Users/vagrant/AppData/Local/Temp/kitchen/cache/cookbooks/jnj_win_hostname/recipes/default.rb:18: syntax error, unexpected tCONSTANT, expecting keyword_end
+I, [2016-11-29T18:30:35.875412 #4684]  INFO -- default-windows2008r2:       notify    'Reboot['Complete_Rename']'
+I, [2016-11-29T18:30:35.878346 #4684]  INFO -- default-windows2008r2:                                  ^
+I, [2016-11-29T18:30:35.882256 #4684]  INFO -- default-windows2008r2: C:/Users/vagrant/AppData/Local/Temp/kitchen/cache/cookbooks/jnj_win_hostname/recipes/default.rb:24: syntax error, unexpected end-of-input, expecting keyword_end
+E, [2016-11-29T18:30:35.936985 #4684] ERROR -- default-windows2008r2: Converge failed on instance <default-windows2008r2>.
+E, [2016-11-29T18:30:35.936985 #4684] ERROR -- default-windows2008r2: ------Exception-------
+E, [2016-11-29T18:30:35.937985 #4684] ERROR -- default-windows2008r2: Class: Kitchen::ActionFailed
+E, [2016-11-29T18:30:35.937985 #4684] ERROR -- default-windows2008r2: Message: WinRM exited (1) for command: [$env:TEST_KITCHEN = "1"
+$env:PATH = try {
+[System.Environment]::GetEnvironmentVariable('PATH','Machine')
+} catch { $env:PATH }
+
+& $env:systemdrive\opscode\chef\bin\chef-solo.bat --config $env:TEMP\kitchen\solo.rb --log_level auto --no-color --json-attributes $env:TEMP\kitchen\dna.json  --force-formatter]
+E, [2016-11-29T18:30:35.937985 #4684] ERROR -- default-windows2008r2: ----------------------
+E, [2016-11-29T18:30:35.937985 #4684] ERROR -- default-windows2008r2: ------Backtrace-------
+E, [2016-11-29T18:30:35.937985 #4684] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/provisioner/base.rb:86:in `rescue in call'
+E, [2016-11-29T18:30:35.937985 #4684] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/provisioner/base.rb:89:in `call'
+E, [2016-11-29T18:30:35.938939 #4684] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:380:in `block in converge_action'
+E, [2016-11-29T18:30:35.938939 #4684] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:520:in `synchronize_or_call'
+E, [2016-11-29T18:30:35.938939 #4684] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:485:in `block in action'
+E, [2016-11-29T18:30:35.938939 #4684] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2016-11-29T18:30:35.938939 #4684] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:484:in `action'
+E, [2016-11-29T18:30:35.938939 #4684] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:376:in `converge_action'
+E, [2016-11-29T18:30:35.939931 #4684] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:355:in `block in transition_to'
+E, [2016-11-29T18:30:35.939931 #4684] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:354:in `each'
+E, [2016-11-29T18:30:35.939931 #4684] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:354:in `transition_to'
+E, [2016-11-29T18:30:35.939931 #4684] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:138:in `converge'
+E, [2016-11-29T18:30:35.939931 #4684] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:201:in `public_send'
+E, [2016-11-29T18:30:35.939931 #4684] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:201:in `run_action_in_thread'
+E, [2016-11-29T18:30:35.940896 #4684] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:173:in `block (2 levels) in run_action'
+E, [2016-11-29T18:30:35.940896 #4684] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/logging-2.1.0/lib/logging/diagnostic_context.rb:450:in `block in create_with_logging_context'
+E, [2016-11-29T18:30:35.940896 #4684] ERROR -- default-windows2008r2: ----End Backtrace-----
+E, [2016-11-29T18:30:35.940896 #4684] ERROR -- default-windows2008r2: ---Nested Exception---
+E, [2016-11-29T18:30:35.940896 #4684] ERROR -- default-windows2008r2: Class: Kitchen::Transport::WinrmFailed
+E, [2016-11-29T18:30:35.940896 #4684] ERROR -- default-windows2008r2: Message: WinRM exited (1) for command: [$env:TEST_KITCHEN = "1"
+$env:PATH = try {
+[System.Environment]::GetEnvironmentVariable('PATH','Machine')
+} catch { $env:PATH }
+
+& $env:systemdrive\opscode\chef\bin\chef-solo.bat --config $env:TEMP\kitchen\solo.rb --log_level auto --no-color --json-attributes $env:TEMP\kitchen\dna.json  --force-formatter]
+E, [2016-11-29T18:30:35.940896 #4684] ERROR -- default-windows2008r2: ----------------------
+E, [2016-11-29T18:30:35.940896 #4684] ERROR -- default-windows2008r2: ------Backtrace-------
+E, [2016-11-29T18:30:35.940896 #4684] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/provisioner/base.rb:86:in `rescue in call'
+E, [2016-11-29T18:30:35.941884 #4684] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/provisioner/base.rb:89:in `call'
+E, [2016-11-29T18:30:35.941884 #4684] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:380:in `block in converge_action'
+E, [2016-11-29T18:30:35.941884 #4684] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:520:in `synchronize_or_call'
+E, [2016-11-29T18:30:35.941884 #4684] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:485:in `block in action'
+E, [2016-11-29T18:30:35.941884 #4684] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2016-11-29T18:30:35.941884 #4684] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:484:in `action'
+E, [2016-11-29T18:30:35.941884 #4684] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:376:in `converge_action'
+E, [2016-11-29T18:30:35.941884 #4684] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:355:in `block in transition_to'
+E, [2016-11-29T18:30:35.941884 #4684] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:354:in `each'
+E, [2016-11-29T18:30:35.941884 #4684] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:354:in `transition_to'
+E, [2016-11-29T18:30:35.941884 #4684] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:138:in `converge'
+E, [2016-11-29T18:30:35.941884 #4684] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:201:in `public_send'
+E, [2016-11-29T18:30:35.941884 #4684] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:201:in `run_action_in_thread'
+E, [2016-11-29T18:30:35.941884 #4684] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:173:in `block (2 levels) in run_action'
+E, [2016-11-29T18:30:35.941884 #4684] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/logging-2.1.0/lib/logging/diagnostic_context.rb:450:in `block in create_with_logging_context'
+E, [2016-11-29T18:30:35.941884 #4684] ERROR -- default-windows2008r2: ----End Backtrace-----

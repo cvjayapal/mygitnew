@@ -1,0 +1,3 @@
+I, [2016-12-15T19:01:57.992663 #8716]  INFO -- Kitchen: -----> Starting Kitchen (v1.13.2)
+I, [2016-12-15T19:02:05.523296 #8716]  INFO -- Kitchen: -----> Verifying <default-windows2008r2>...
+I, [2016-12-15T19:02:23.602533 #8716]  INFO -- Kitchen: -----> Kitchen is finished. (0m25.61s)

@@ -1,0 +1,76 @@
+I, [2016-12-20T10:11:48.207362 #8504]  INFO -- Kitchen: -----> Starting Kitchen (v1.13.2)
+I, [2016-12-20T10:11:53.284587 #8504]  INFO -- Kitchen: -----> Verifying <default-centos-72>...
+E, [2016-12-20T10:13:12.417492 #8504] ERROR -- Kitchen: ------Exception-------
+E, [2016-12-20T10:13:12.417492 #8504] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2016-12-20T10:13:12.417492 #8504] ERROR -- Kitchen: Message: 1 actions failed.
+>>>>>>     Failed to complete #verify action: [Transport error, can't connect to 'ssh' backend: SSH session could not be established] on default-centos-72
+E, [2016-12-20T10:13:12.417492 #8504] ERROR -- Kitchen: ----------------------
+E, [2016-12-20T10:13:12.417492 #8504] ERROR -- Kitchen: ------Backtrace-------
+E, [2016-12-20T10:13:12.417492 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:187:in `report_errors'
+E, [2016-12-20T10:13:12.417492 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:178:in `run_action'
+E, [2016-12-20T10:13:12.417492 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command/action.rb:39:in `block in call'
+E, [2016-12-20T10:13:12.417492 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2016-12-20T10:13:12.417492 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command/action.rb:37:in `call'
+E, [2016-12-20T10:13:12.417492 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/cli.rb:56:in `perform'
+E, [2016-12-20T10:13:12.417492 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/cli.rb:186:in `block (2 levels) in <class:CLI>'
+E, [2016-12-20T10:13:12.417492 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2016-12-20T10:13:12.417492 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2016-12-20T10:13:12.417492 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/cli.rb:334:in `invoke_task'
+E, [2016-12-20T10:13:12.417492 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2016-12-20T10:13:12.417492 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2016-12-20T10:13:12.417492 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/bin/kitchen:13:in `block in <top (required)>'
+E, [2016-12-20T10:13:12.417492 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/errors.rb:174:in `with_friendly_errors'
+E, [2016-12-20T10:13:12.417492 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/bin/kitchen:13:in `<top (required)>'
+E, [2016-12-20T10:13:12.417492 #8504] ERROR -- Kitchen: C:/opscode/chefdk/bin/kitchen:24:in `load'
+E, [2016-12-20T10:13:12.417492 #8504] ERROR -- Kitchen: C:/opscode/chefdk/bin/kitchen:24:in `<main>'
+E, [2016-12-20T10:13:12.417492 #8504] ERROR -- Kitchen: ----End Backtrace-----
+E, [2016-12-20T10:13:12.417492 #8504] ERROR -- Kitchen: -Composite Exception--
+E, [2016-12-20T10:13:12.417492 #8504] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2016-12-20T10:13:12.417492 #8504] ERROR -- Kitchen: Message: Failed to complete #verify action: [Transport error, can't connect to 'ssh' backend: SSH session could not be established] on default-centos-72
+E, [2016-12-20T10:13:12.417492 #8504] ERROR -- Kitchen: ----------------------
+E, [2016-12-20T10:13:12.417492 #8504] ERROR -- Kitchen: ------Backtrace-------
+E, [2016-12-20T10:13:12.417492 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/inspec-1.2.0/lib/inspec/backend.rb:44:in `rescue in create'
+E, [2016-12-20T10:13:12.417492 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/inspec-1.2.0/lib/inspec/backend.rb:16:in `create'
+E, [2016-12-20T10:13:12.417492 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/inspec-1.2.0/lib/inspec/runner.rb:64:in `configure_transport'
+E, [2016-12-20T10:13:12.417492 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/inspec-1.2.0/lib/inspec/runner.rb:56:in `initialize'
+E, [2016-12-20T10:13:12.417492 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/kitchen-inspec-0.15.2/lib/kitchen/verifier/inspec.rb:68:in `new'
+E, [2016-12-20T10:13:12.417492 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/kitchen-inspec-0.15.2/lib/kitchen/verifier/inspec.rb:68:in `call'
+E, [2016-12-20T10:13:12.417492 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:430:in `block in verify_action'
+E, [2016-12-20T10:13:12.417492 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:520:in `synchronize_or_call'
+E, [2016-12-20T10:13:12.417492 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:485:in `block in action'
+E, [2016-12-20T10:13:12.417492 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2016-12-20T10:13:12.433092 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:484:in `action'
+E, [2016-12-20T10:13:12.433092 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:422:in `verify_action'
+E, [2016-12-20T10:13:12.433092 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:355:in `block in transition_to'
+E, [2016-12-20T10:13:12.433092 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:354:in `each'
+E, [2016-12-20T10:13:12.433092 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:354:in `transition_to'
+E, [2016-12-20T10:13:12.433092 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:160:in `verify'
+E, [2016-12-20T10:13:12.433092 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:201:in `public_send'
+E, [2016-12-20T10:13:12.433092 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:201:in `run_action_in_thread'
+E, [2016-12-20T10:13:12.433092 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:173:in `block (2 levels) in run_action'
+E, [2016-12-20T10:13:12.433092 #8504] ERROR -- Kitchen: ----End Backtrace-----
+E, [2016-12-20T10:13:12.433092 #8504] ERROR -- Kitchen: ---Nested Exception---
+E, [2016-12-20T10:13:12.433092 #8504] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2016-12-20T10:13:12.433092 #8504] ERROR -- Kitchen: Message: Failed to complete #verify action: [Transport error, can't connect to 'ssh' backend: SSH session could not be established]
+E, [2016-12-20T10:13:12.433092 #8504] ERROR -- Kitchen: ----------------------
+E, [2016-12-20T10:13:12.433092 #8504] ERROR -- Kitchen: ------Backtrace-------
+E, [2016-12-20T10:13:12.433092 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/inspec-1.2.0/lib/inspec/backend.rb:44:in `rescue in create'
+E, [2016-12-20T10:13:12.433092 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/inspec-1.2.0/lib/inspec/backend.rb:16:in `create'
+E, [2016-12-20T10:13:12.433092 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/inspec-1.2.0/lib/inspec/runner.rb:64:in `configure_transport'
+E, [2016-12-20T10:13:12.433092 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/inspec-1.2.0/lib/inspec/runner.rb:56:in `initialize'
+E, [2016-12-20T10:13:12.433092 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/kitchen-inspec-0.15.2/lib/kitchen/verifier/inspec.rb:68:in `new'
+E, [2016-12-20T10:13:12.433092 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/kitchen-inspec-0.15.2/lib/kitchen/verifier/inspec.rb:68:in `call'
+E, [2016-12-20T10:13:12.433092 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:430:in `block in verify_action'
+E, [2016-12-20T10:13:12.433092 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:520:in `synchronize_or_call'
+E, [2016-12-20T10:13:12.433092 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:485:in `block in action'
+E, [2016-12-20T10:13:12.433092 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2016-12-20T10:13:12.433092 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:484:in `action'
+E, [2016-12-20T10:13:12.433092 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:422:in `verify_action'
+E, [2016-12-20T10:13:12.433092 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:355:in `block in transition_to'
+E, [2016-12-20T10:13:12.433092 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:354:in `each'
+E, [2016-12-20T10:13:12.433092 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:354:in `transition_to'
+E, [2016-12-20T10:13:12.433092 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:160:in `verify'
+E, [2016-12-20T10:13:12.433092 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:201:in `public_send'
+E, [2016-12-20T10:13:12.433092 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:201:in `run_action_in_thread'
+E, [2016-12-20T10:13:12.433092 #8504] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:173:in `block (2 levels) in run_action'
+E, [2016-12-20T10:13:12.433092 #8504] ERROR -- Kitchen: ----End Backtrace-----

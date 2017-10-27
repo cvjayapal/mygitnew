@@ -1,0 +1,6 @@
+FROM_LOCATION=<%= @tmpdir %>/client/stage/products.xml
+UNIX_GROUP_NAME=oinstall
+ORACLE_HOME=/u01/app/oracle/product/<%= @oracle_version %>.<%= @oracle_package_full %>/client_2
+ORACLE_HOME_NAME="OraClient11g_Home1"
+ORACLE_BASE=/u01/app/oracle
+oracle.install.client.installType="Administrator"

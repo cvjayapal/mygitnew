@@ -1,0 +1,104 @@
+I, [2016-11-15T13:11:12.403303 #11304]  INFO -- default-ubuntu-1404: -----> Converging <default-ubuntu-1404>...
+I, [2016-11-15T13:11:12.411124 #11304]  INFO -- default-ubuntu-1404: Preparing files for transfer
+I, [2016-11-15T13:11:12.412089 #11304]  INFO -- default-ubuntu-1404: Preparing dna.json
+I, [2016-11-15T13:11:12.417946 #11304]  INFO -- default-ubuntu-1404: Preparing current project directory as a cookbook
+I, [2016-11-15T13:11:12.534892 #11304]  INFO -- default-ubuntu-1404: Removing non-cookbook files before transfer
+I, [2016-11-15T13:11:12.569110 #11304]  INFO -- default-ubuntu-1404: Preparing solo.rb
+I, [2016-11-15T13:11:18.853470 #11304]  INFO -- default-ubuntu-1404: -----> Chef Omnibus installation detected (install only if missing)
+I, [2016-11-15T13:11:18.903718 #11304]  INFO -- default-ubuntu-1404: Transferring files to <default-ubuntu-1404>
+I, [2016-11-15T13:11:23.425206 #11304]  INFO -- default-ubuntu-1404: Starting Chef Client, version 12.16.42
+I, [2016-11-15T13:11:26.387410 #11304]  INFO -- default-ubuntu-1404: resolving cookbooks for run list: ["sev1_security::default"]
+I, [2016-11-15T13:11:26.453867 #11304]  INFO -- default-ubuntu-1404: Synchronizing Cookbooks:
+I, [2016-11-15T13:11:26.466568 #11304]  INFO -- default-ubuntu-1404:   - sev1_security (0.1.0)
+I, [2016-11-15T13:11:26.467546 #11304]  INFO -- default-ubuntu-1404: Installing Cookbook Gems:
+I, [2016-11-15T13:11:26.468523 #11304]  INFO -- default-ubuntu-1404: Compiling Cookbooks...
+I, [2016-11-15T13:11:26.482211 #11304]  INFO -- default-ubuntu-1404: Converging 1 resources
+I, [2016-11-15T13:11:26.484172 #11304]  INFO -- default-ubuntu-1404: Recipe: sev1_security::default
+I, [2016-11-15T13:11:26.561641 #11304]  INFO -- default-ubuntu-1404:   * cron[Apply_Sev1] action create
+I, [2016-11-15T13:11:26.563594 #11304]  INFO -- default-ubuntu-1404:     
+I, [2016-11-15T13:11:26.564574 #11304]  INFO -- default-ubuntu-1404:     ================================================================================
+I, [2016-11-15T13:11:26.566528 #11304]  INFO -- default-ubuntu-1404:     Error executing action `create` on resource 'cron[Apply_Sev1]'
+I, [2016-11-15T13:11:26.568485 #11304]  INFO -- default-ubuntu-1404:     ================================================================================
+I, [2016-11-15T13:11:26.568485 #11304]  INFO -- default-ubuntu-1404:     
+I, [2016-11-15T13:11:26.569463 #11304]  INFO -- default-ubuntu-1404:     Chef::Exceptions::Cron
+I, [2016-11-15T13:11:26.573372 #11304]  INFO -- default-ubuntu-1404: ----------------------
+I, [2016-11-15T13:11:26.573372 #11304]  INFO -- default-ubuntu-1404:     Error updating state of Apply_Sev1, exit: 1
+I, [2016-11-15T13:11:26.573372 #11304]  INFO -- default-ubuntu-1404:     
+I, [2016-11-15T13:11:26.573372 #11304]  INFO -- default-ubuntu-1404:     Resource Declaration:
+I, [2016-11-15T13:11:26.573372 #11304]  INFO -- default-ubuntu-1404:     ---------------------
+I, [2016-11-15T13:11:26.574353 #11304]  INFO -- default-ubuntu-1404:     # In /tmp/kitchen/cache/cookbooks/sev1_security/recipes/default.rb
+I, [2016-11-15T13:11:26.574353 #11304]  INFO -- default-ubuntu-1404:     
+I, [2016-11-15T13:11:26.578261 #11304]  INFO -- default-ubuntu-1404:      13: cron 'Apply_Sev1' do
+I, [2016-11-15T13:11:26.579242 #11304]  INFO -- default-ubuntu-1404:      14:   command "/usr/bin/yum -y -q --disablerepo=* --enablerepo=jnj-s3-sev1-security-RHEL7 update >> /var/log/sev1-security.log 2>&1"	
+I, [2016-11-15T13:11:26.579242 #11304]  INFO -- default-ubuntu-1404:      15:   user 'root'
+I, [2016-11-15T13:11:26.579242 #11304]  INFO -- default-ubuntu-1404:      16:   minute "#{node[:sev1_security][:minute]}"
+I, [2016-11-15T13:11:26.579242 #11304]  INFO -- default-ubuntu-1404:      17:   hour '3,9,15,21'
+I, [2016-11-15T13:11:26.579242 #11304]  INFO -- default-ubuntu-1404:      18:   environment envvar
+I, [2016-11-15T13:11:26.580219 #11304]  INFO -- default-ubuntu-1404:      19: end
+I, [2016-11-15T13:11:26.580219 #11304]  INFO -- default-ubuntu-1404:     
+I, [2016-11-15T13:11:26.580219 #11304]  INFO -- default-ubuntu-1404:     Compiled Resource:
+I, [2016-11-15T13:11:26.580219 #11304]  INFO -- default-ubuntu-1404:     ------------------
+I, [2016-11-15T13:11:26.589989 #11304]  INFO -- default-ubuntu-1404: # Declared in /tmp/kitchen/cache/cookbooks/sev1_security/recipes/default.rb:13:in `from_file'
+I, [2016-11-15T13:11:26.589989 #11304]  INFO -- default-ubuntu-1404:     
+I, [2016-11-15T13:11:26.590968 #11304]  INFO -- default-ubuntu-1404:     cron("Apply_Sev1") do
+I, [2016-11-15T13:11:26.592922 #11304]  INFO -- default-ubuntu-1404:   action [:create]
+I, [2016-11-15T13:11:26.593905 #11304]  INFO -- default-ubuntu-1404:       retries 0
+I, [2016-11-15T13:11:26.593905 #11304]  INFO -- default-ubuntu-1404:       retry_delay 2
+I, [2016-11-15T13:11:26.593905 #11304]  INFO -- default-ubuntu-1404:       default_guard_interpreter :default
+I, [2016-11-15T13:11:26.593905 #11304]  INFO -- default-ubuntu-1404:       minute "  $random % 59"
+I, [2016-11-15T13:11:26.593905 #11304]  INFO -- default-ubuntu-1404:       hour "3,9,15,21"
+I, [2016-11-15T13:11:26.597822 #11304]  INFO -- default-ubuntu-1404:   day "*"
+I, [2016-11-15T13:11:26.598789 #11304]  INFO -- default-ubuntu-1404:       month "*"
+I, [2016-11-15T13:11:26.598789 #11304]  INFO -- default-ubuntu-1404:       weekday "*"
+I, [2016-11-15T13:11:26.598789 #11304]  INFO -- default-ubuntu-1404:       command "/usr/bin/yum -y -q --disablerepo=* --enablerepo=jnj-s3-sev1-security-RHEL7 update >> /var/log/sev1-security.log 2>&1"
+I, [2016-11-15T13:11:26.598789 #11304]  INFO -- default-ubuntu-1404:       user "root"
+I, [2016-11-15T13:11:26.598789 #11304]  INFO -- default-ubuntu-1404:       environment {"MAILTO"=>"root"}
+I, [2016-11-15T13:11:26.599793 #11304]  INFO -- default-ubuntu-1404:       declared_type :cron
+I, [2016-11-15T13:11:26.599793 #11304]  INFO -- default-ubuntu-1404:       cookbook_name "sev1_security"
+I, [2016-11-15T13:11:26.606615 #11304]  INFO -- default-ubuntu-1404:   recipe_name "default"
+I, [2016-11-15T13:11:26.606615 #11304]  INFO -- default-ubuntu-1404:     end
+I, [2016-11-15T13:11:26.606615 #11304]  INFO -- default-ubuntu-1404:     
+I, [2016-11-15T13:11:26.606615 #11304]  INFO -- default-ubuntu-1404:     Platform:
+I, [2016-11-15T13:11:26.609542 #11304]  INFO -- default-ubuntu-1404: 
+I, [2016-11-15T13:11:26.609542 #11304]  INFO -- default-ubuntu-1404:     x86_64-linux
+I, [2016-11-15T13:11:26.610520 #11304]  INFO -- default-ubuntu-1404:     
+I, [2016-11-15T13:11:26.612480 #11304]  INFO -- default-ubuntu-1404: 
+I, [2016-11-15T13:11:26.613452 #11304]  INFO -- default-ubuntu-1404: Running handlers:
+I, [2016-11-15T13:11:26.614440 #11304]  INFO -- default-ubuntu-1404: [2016-11-15T07:41:26+00:00] ERROR: Running exception handlers
+I, [2016-11-15T13:11:26.616391 #11304]  INFO -- default-ubuntu-1404: Running handlers complete
+I, [2016-11-15T13:11:26.617363 #11304]  INFO -- default-ubuntu-1404: [2016-11-15T07:41:26+00:00] ERROR: Exception handlers complete
+I, [2016-11-15T13:11:26.619324 #11304]  INFO -- default-ubuntu-1404: Chef Client failed. 0 resources updated in 03 seconds
+I, [2016-11-15T13:11:26.621290 #11304]  INFO -- default-ubuntu-1404: [2016-11-15T07:41:26+00:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.out
+I, [2016-11-15T13:11:26.624211 #11304]  INFO -- default-ubuntu-1404: [2016-11-15T07:41:26+00:00] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+I, [2016-11-15T13:11:26.625187 #11304]  INFO -- default-ubuntu-1404: [2016-11-15T07:41:26+00:00] ERROR: cron[Apply_Sev1] (sev1_security::default line 13) had an error: Chef::Exceptions::Cron: Error updating state of Apply_Sev1, exit: 1
+I, [2016-11-15T13:11:26.680914 #11304]  INFO -- default-ubuntu-1404: [2016-11-15T07:41:26+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+E, [2016-11-15T13:11:26.759334 #11304] ERROR -- default-ubuntu-1404: Converge failed on instance <default-ubuntu-1404>.
+E, [2016-11-15T13:11:26.759334 #11304] ERROR -- default-ubuntu-1404: ------Exception-------
+E, [2016-11-15T13:11:26.759334 #11304] ERROR -- default-ubuntu-1404: Class: Kitchen::ActionFailed
+E, [2016-11-15T13:11:26.760350 #11304] ERROR -- default-ubuntu-1404: Message: SSH exited (1) for command: [sh -c '
+
+sudo -E /opt/chef/bin/chef-solo --config /tmp/kitchen/solo.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json
+']
+E, [2016-11-15T13:11:26.760350 #11304] ERROR -- default-ubuntu-1404: ---Nested Exception---
+E, [2016-11-15T13:11:26.761316 #11304] ERROR -- default-ubuntu-1404: Class: Kitchen::Transport::SshFailed
+E, [2016-11-15T13:11:26.761316 #11304] ERROR -- default-ubuntu-1404: Message: SSH exited (1) for command: [sh -c '
+
+sudo -E /opt/chef/bin/chef-solo --config /tmp/kitchen/solo.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json
+']
+E, [2016-11-15T13:11:26.761316 #11304] ERROR -- default-ubuntu-1404: ------Backtrace-------
+E, [2016-11-15T13:11:26.762269 #11304] ERROR -- default-ubuntu-1404: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.4.2/lib/kitchen/provisioner/base.rb:74:in `rescue in call'
+E, [2016-11-15T13:11:26.762269 #11304] ERROR -- default-ubuntu-1404: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.4.2/lib/kitchen/provisioner/base.rb:77:in `call'
+E, [2016-11-15T13:11:26.762269 #11304] ERROR -- default-ubuntu-1404: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:366:in `block in converge_action'
+E, [2016-11-15T13:11:26.762269 #11304] ERROR -- default-ubuntu-1404: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:488:in `call'
+E, [2016-11-15T13:11:26.763243 #11304] ERROR -- default-ubuntu-1404: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:488:in `synchronize_or_call'
+E, [2016-11-15T13:11:26.763243 #11304] ERROR -- default-ubuntu-1404: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:453:in `block in action'
+E, [2016-11-15T13:11:26.763243 #11304] ERROR -- default-ubuntu-1404: C:/opscode/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2016-11-15T13:11:26.764251 #11304] ERROR -- default-ubuntu-1404: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:452:in `action'
+E, [2016-11-15T13:11:26.764251 #11304] ERROR -- default-ubuntu-1404: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:362:in `converge_action'
+E, [2016-11-15T13:11:26.765198 #11304] ERROR -- default-ubuntu-1404: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:341:in `block in transition_to'
+E, [2016-11-15T13:11:26.765198 #11304] ERROR -- default-ubuntu-1404: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:340:in `each'
+E, [2016-11-15T13:11:26.765198 #11304] ERROR -- default-ubuntu-1404: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:340:in `transition_to'
+E, [2016-11-15T13:11:26.765198 #11304] ERROR -- default-ubuntu-1404: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.4.2/lib/kitchen/instance.rb:138:in `converge'
+E, [2016-11-15T13:11:26.766256 #11304] ERROR -- default-ubuntu-1404: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.4.2/lib/kitchen/command.rb:176:in `public_send'
+E, [2016-11-15T13:11:26.766593 #11304] ERROR -- default-ubuntu-1404: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.4.2/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2016-11-15T13:11:26.766953 #11304] ERROR -- default-ubuntu-1404: ----------------------

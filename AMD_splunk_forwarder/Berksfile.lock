@@ -1,0 +1,7 @@
+DEPENDENCIES
+  AMD_splunk_forwarder
+    path: .
+    metadata: true
+
+GRAPH
+  AMD_splunk_forwarder (0.1.0)

@@ -1,0 +1,1 @@
+default['hostname']['name'] = 'variable'

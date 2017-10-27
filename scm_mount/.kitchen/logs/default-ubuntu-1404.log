@@ -1,0 +1,22 @@
+I, [2016-12-16T14:29:50.870627 #5916]  INFO -- default-ubuntu-1404: -----> Converging <default-ubuntu-1404>...
+I, [2016-12-16T14:29:50.872627 #5916]  INFO -- default-ubuntu-1404: Preparing files for transfer
+I, [2016-12-16T14:29:50.873126 #5916]  INFO -- default-ubuntu-1404: Preparing dna.json
+I, [2016-12-16T14:29:50.875126 #5916]  INFO -- default-ubuntu-1404: Preparing current project directory as a cookbook
+I, [2016-12-16T14:29:50.921117 #5916]  INFO -- default-ubuntu-1404: Removing non-cookbook files before transfer
+I, [2016-12-16T14:29:50.983604 #5916]  INFO -- default-ubuntu-1404: Preparing solo.rb
+I, [2016-12-16T14:29:53.209159 #5916]  INFO -- default-ubuntu-1404: -----> Chef Omnibus installation detected (install only if missing)
+I, [2016-12-16T14:29:53.241153 #5916]  INFO -- default-ubuntu-1404: Transferring files to <default-ubuntu-1404>
+I, [2016-12-16T14:29:55.111279 #5916]  INFO -- default-ubuntu-1404: Starting Chef Client, version 12.17.44
+I, [2016-12-16T14:29:57.123376 #5916]  INFO -- default-ubuntu-1404: resolving cookbooks for run list: ["scm_mount::default"]
+I, [2016-12-16T14:29:57.153870 #5916]  INFO -- default-ubuntu-1404: Synchronizing Cookbooks:
+I, [2016-12-16T14:29:57.164368 #5916]  INFO -- default-ubuntu-1404:   - scm_mount (0.1.0)
+I, [2016-12-16T14:29:57.164868 #5916]  INFO -- default-ubuntu-1404: Installing Cookbook Gems:
+I, [2016-12-16T14:29:57.165368 #5916]  INFO -- default-ubuntu-1404: Compiling Cookbooks...
+I, [2016-12-16T14:29:57.179865 #5916]  INFO -- default-ubuntu-1404: Converging 1 resources
+I, [2016-12-16T14:29:57.179865 #5916]  INFO -- default-ubuntu-1404: Recipe: scm_mount::default
+I, [2016-12-16T14:29:57.190363 #5916]  INFO -- default-ubuntu-1404:   * directory[rl] action create (up to date)
+I, [2016-12-16T14:29:57.250851 #5916]  INFO -- default-ubuntu-1404: 
+I, [2016-12-16T14:29:57.251351 #5916]  INFO -- default-ubuntu-1404: Running handlers:
+I, [2016-12-16T14:29:57.251850 #5916]  INFO -- default-ubuntu-1404: Running handlers complete
+I, [2016-12-16T14:29:57.251850 #5916]  INFO -- default-ubuntu-1404: Chef Client finished, 0/1 resources updated in 02 seconds
+I, [2016-12-16T14:29:57.347331 #5916]  INFO -- default-ubuntu-1404: Finished converging <default-ubuntu-1404> (0m6.47s).

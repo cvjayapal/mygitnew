@@ -1,0 +1,62 @@
+I, [2016-12-20T14:26:16.173805 #824]  INFO -- default-windows2008r2: -----> Converging <default-windows2008r2>...
+I, [2016-12-20T14:26:16.175761 #824]  INFO -- default-windows2008r2: Preparing files for transfer
+I, [2016-12-20T14:26:16.176739 #824]  INFO -- default-windows2008r2: Preparing dna.json
+I, [2016-12-20T14:26:16.178696 #824]  INFO -- default-windows2008r2: Preparing current project directory as a cookbook
+I, [2016-12-20T14:26:16.213924 #824]  INFO -- default-windows2008r2: Removing non-cookbook files before transfer
+I, [2016-12-20T14:26:16.255024 #824]  INFO -- default-windows2008r2: Preparing solo.rb
+E, [2016-12-20T14:27:27.043547 #824] ERROR -- default-windows2008r2: Converge failed on instance <default-windows2008r2>.
+E, [2016-12-20T14:27:27.044538 #824] ERROR -- default-windows2008r2: ------Exception-------
+E, [2016-12-20T14:27:27.044538 #824] ERROR -- default-windows2008r2: Class: HTTPClient::ReceiveTimeoutError
+E, [2016-12-20T14:27:27.045506 #824] ERROR -- default-windows2008r2: Message: execution expired
+E, [2016-12-20T14:27:27.045880 #824] ERROR -- default-windows2008r2: ----------------------
+E, [2016-12-20T14:27:27.046244 #824] ERROR -- default-windows2008r2: ------Backtrace-------
+E, [2016-12-20T14:27:27.046606 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/httpclient-2.8.2.4/lib/httpclient/session.rb:799:in `gets'
+E, [2016-12-20T14:27:27.046970 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/httpclient-2.8.2.4/lib/httpclient/session.rb:799:in `block in parse_header'
+E, [2016-12-20T14:27:27.047340 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/2.3.0/timeout.rb:101:in `timeout'
+E, [2016-12-20T14:27:27.047340 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/httpclient-2.8.2.4/lib/httpclient/session.rb:795:in `parse_header'
+E, [2016-12-20T14:27:27.047340 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/httpclient-2.8.2.4/lib/httpclient/session.rb:778:in `read_header'
+E, [2016-12-20T14:27:27.048313 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/httpclient-2.8.2.4/lib/httpclient/session.rb:554:in `get_header'
+E, [2016-12-20T14:27:27.048313 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/httpclient-2.8.2.4/lib/httpclient.rb:1297:in `do_get_header'
+E, [2016-12-20T14:27:27.048313 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/httpclient-2.8.2.4/lib/httpclient.rb:1243:in `do_get_block'
+E, [2016-12-20T14:27:27.049297 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/httpclient-2.8.2.4/lib/httpclient.rb:1017:in `block in do_request'
+E, [2016-12-20T14:27:27.049297 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/httpclient-2.8.2.4/lib/httpclient.rb:1131:in `protect_keep_alive_disconnected'
+E, [2016-12-20T14:27:27.049297 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/httpclient-2.8.2.4/lib/httpclient.rb:1012:in `do_request'
+E, [2016-12-20T14:27:27.050274 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/httpclient-2.8.2.4/lib/httpclient.rb:854:in `request'
+E, [2016-12-20T14:27:27.050274 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/httpclient-2.8.2.4/lib/httpclient.rb:763:in `post'
+E, [2016-12-20T14:27:27.050274 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/winrm-2.1.0/lib/winrm/http/transport.rb:220:in `init_auth'
+E, [2016-12-20T14:27:27.050274 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/winrm-2.1.0/lib/winrm/http/transport.rb:168:in `send_request'
+E, [2016-12-20T14:27:27.051253 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/winrm-2.1.0/lib/winrm/shells/power_shell.rb:152:in `max_envelope_size_kb'
+E, [2016-12-20T14:27:27.051253 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/winrm-2.1.0/lib/winrm/shells/power_shell.rb:80:in `max_fragment_blob_size'
+E, [2016-12-20T14:27:27.051253 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/winrm-2.1.0/lib/winrm/shells/power_shell.rb:198:in `fragmenter'
+E, [2016-12-20T14:27:27.051253 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/winrm-2.1.0/lib/winrm/shells/power_shell.rb:162:in `block in open_shell_payload'
+E, [2016-12-20T14:27:27.052231 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/winrm-2.1.0/lib/winrm/shells/power_shell.rb:161:in `map'
+E, [2016-12-20T14:27:27.052231 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/winrm-2.1.0/lib/winrm/shells/power_shell.rb:161:in `open_shell_payload'
+E, [2016-12-20T14:27:27.052231 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/winrm-2.1.0/lib/winrm/shells/power_shell.rb:122:in `open_shell'
+E, [2016-12-20T14:27:27.052231 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/winrm-2.1.0/lib/winrm/shells/base.rb:163:in `block in open'
+E, [2016-12-20T14:27:27.052231 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/winrm-2.1.0/lib/winrm/shells/retryable.rb:37:in `retryable'
+E, [2016-12-20T14:27:27.052231 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/winrm-2.1.0/lib/winrm/shells/base.rb:161:in `open'
+E, [2016-12-20T14:27:27.053210 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/winrm-2.1.0/lib/winrm/shells/base.rb:124:in `with_command_shell'
+E, [2016-12-20T14:27:27.053210 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/winrm-2.1.0/lib/winrm/shells/base.rb:80:in `run'
+E, [2016-12-20T14:27:27.053210 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/transport/winrm.rb:218:in `execute_with_exit_code'
+E, [2016-12-20T14:27:27.053210 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/transport/winrm.rb:100:in `execute'
+E, [2016-12-20T14:27:27.053210 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/provisioner/base.rb:72:in `block in call'
+E, [2016-12-20T14:27:27.054189 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/transport/base.rb:94:in `initialize'
+E, [2016-12-20T14:27:27.054189 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/transport/winrm.rb:422:in `new'
+E, [2016-12-20T14:27:27.054189 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/transport/winrm.rb:422:in `create_new_connection'
+E, [2016-12-20T14:27:27.054189 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/transport/winrm.rb:74:in `connection'
+E, [2016-12-20T14:27:27.054189 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/provisioner/base.rb:71:in `call'
+E, [2016-12-20T14:27:27.055184 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:380:in `block in converge_action'
+E, [2016-12-20T14:27:27.055184 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:520:in `synchronize_or_call'
+E, [2016-12-20T14:27:27.055184 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:485:in `block in action'
+E, [2016-12-20T14:27:27.055184 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2016-12-20T14:27:27.056159 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:484:in `action'
+E, [2016-12-20T14:27:27.056159 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:376:in `converge_action'
+E, [2016-12-20T14:27:27.056159 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:355:in `block in transition_to'
+E, [2016-12-20T14:27:27.056687 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:354:in `each'
+E, [2016-12-20T14:27:27.056854 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:354:in `transition_to'
+E, [2016-12-20T14:27:27.057117 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/instance.rb:138:in `converge'
+E, [2016-12-20T14:27:27.057279 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:201:in `public_send'
+E, [2016-12-20T14:27:27.057438 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:201:in `run_action_in_thread'
+E, [2016-12-20T14:27:27.057597 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:173:in `block (2 levels) in run_action'
+E, [2016-12-20T14:27:27.057755 #824] ERROR -- default-windows2008r2: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/logging-2.1.0/lib/logging/diagnostic_context.rb:450:in `block in create_with_logging_context'
+E, [2016-12-20T14:27:27.057915 #824] ERROR -- default-windows2008r2: ----End Backtrace-----
